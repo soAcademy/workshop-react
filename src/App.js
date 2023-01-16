@@ -43,7 +43,8 @@ const App = () => {
         <Header />
         <Header2 />
         <Header3 />
-
+        <div className="test-font-kanit">ทดสอบ Font Kanit</div>
+        <div style={{fontFamily: "Kanit"}}>ทดสอบ Font Kanit 2</div>
         <table style={{ backgroundColor: "gray" }}>
           <thead>
             <th>ชื่อ</th>
