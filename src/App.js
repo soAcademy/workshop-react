@@ -19,6 +19,8 @@ function App() {
         >
           Learn React
         </a> */}
+        <h1 style={{ color: "lightblue" }}>Hello Blue Header!</h1>
+        <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
       </header>
     </div>
   );
