@@ -21,7 +21,7 @@ function App() {
           <Header2 />
           <Header3 />
         </a>
-        <div className="test-font-kanit">Hello test FONT!!</div>
+        <div className="style1">Hello Style!</div>
       </header>
     </div>
   );
@@ -53,12 +53,13 @@ export default App;
 // <div className="style1">Hello Style!</div>
 
 // Quiz 5
-// in App.css file
 // @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-// .test-font-kanit {
+// .style1 {
+//   color: aqua;
+//   background-color: red;
 //   font-family: 'Kanit', sans-serif;
 //   font-size: 24px;
-// }
+// };
 
 // in App.js file
-// <div className="test-font-kanit">Hello test FONT!</div>
+// <div className="style1">Hello Style!</div>
