@@ -40,12 +40,14 @@ const root = ReactDOM.createRoot(
 
 
 // 6. จากตัวอย่างข้างต้น จงแก้ไขตัวแปร element ให้เรียกการใช้งานฟังก์ชัน displayName เพื่อทําการแสดง full name ได้
-const user = {
-  firstName: 'Bond',
-  lastName: 'Bond'
-}
-const displayName = '
-const element = <div>{ displayName(user) }</div>
+// const user = {
+//   firstName: 'Bond',
+//   lastName: 'Bond'
+// }
+// const displayName => {
+  
+// }
+// const element = <div>{ displayName(user) }</div>
 
 // 7. จงเขียนฟังก์ชันชื่อ oddOrEven ที่รับ parameter ชื่อ number โดยฟังก์ชันจะทําการ return string ว่า “odd” หาก input number เป็นเลขคี่และ return string ว่า “even” หาก input number เป็นเลขคู่
 // const oddOrEven = (number) => {
