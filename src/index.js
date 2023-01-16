@@ -5,7 +5,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const element = <div>Hello</div>;
+const element = (
+  <div>
+    <h1>Hello</h1>
+    <h2>World!</h2>
+  </div>
+);
 root.render(element);
 // root.render(
 //   <React.StrictMode>
