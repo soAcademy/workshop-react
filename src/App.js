@@ -1,18 +1,20 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 // import Header from './Header';
 // import {Header1, Header2} from './Header2';
-import "./my-style.css";
+// import "./my-style.css";
+import Resume from './resume';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1 style={{ color: "#4ecdc4" }}>Hello Blue Header!</h1>
         <h1 style={{ backgroundColor: "#ff6b6b" }}>Hello Red Background!</h1>
         <div className="colBlueBackRed">Hello Style!</div>
-      </header>
+      </header> */}
+      <Resume/>
     </div>
   );
 }
