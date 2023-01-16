@@ -28,7 +28,7 @@ function App() {
       <div>{fullName}</div>
       <div>{element3}</div>
       <div>{user.firstName + "  " + user.lastName}</div>
-      <div>{(oddOrEven = {})}</div>
+      <div>{oddOrEven(100)}</div>
     </>
   );
 }
