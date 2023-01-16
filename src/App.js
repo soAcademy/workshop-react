@@ -10,6 +10,20 @@ function App() {
     color: "lightblue",
     backgroundColor: "red",
   };
+  const customers = [
+    {
+      name: "Bin",
+      orderValue: 1400,
+    },
+    {
+      name: "Jam",
+      orderValue: 1500,
+    },
+    {
+      name: "Ploy",
+      orderValue: 2000,
+    },
+  ];
   return (
     <div className="App">
       <header className="App-header">
@@ -32,6 +46,18 @@ function App() {
         <div className={myStyleModule["my-style"]}>
           Hello Style from CSS modules!
         </div>
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Order Value</th>
+          </thead>
+          {customers.map((customer) => (
+            <tr>
+              <td>{customer.name}</td>
+              <td>{customer.orderValue}</td>
+            </tr>
+          ))}
+        </table>
       </header>
     </div>
   );
