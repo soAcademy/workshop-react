@@ -1,0 +1,15 @@
+.blue-background{
+  
+    color:red;
+    background-color: blue;
+  
+  
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.blue-with-red-kanit{
+  color: rgb(255, 255, 255);
+  background-color: brown;
+  font-size: 24px;
+  font-family: "Kanit";
+}

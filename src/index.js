@@ -3,19 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-const oddOrEven = (input)=>{
-  if(input % 2 !==0){
-    return "even";
-  }else{
-    return "odd";
-  }
+import header from './header';
+import './myStyle.css' 
+const myStyles = {
+  color:'blue',
+  backgroundColor:'red',
 };
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+// const displayName =(user)=>{
+//   return user.firstName+ ' '+user.lastName
+// };
+// const user = {
+//   firstName: "John",
+//   lastName: "Doe",
+// };
+
 const element = <div>
-    {oddOrEven(12)}
+    {/* {displayName(user )} */}
+    <h1 style={{color:'blue'}}>Hello Blue Header</h1>
+    <h1 style={{backgroundColor:'red'}}> Hello Red Background</h1>
+    <div style={myStyles}>Hello style</div>
+    <div className='blue-background'>Hello Style by import</div>
+    <div className='blue-with-red-kanit'>Hello Kanit font</div>
 </div>
+
 
 root.render(
   element
