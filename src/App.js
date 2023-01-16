@@ -21,7 +21,7 @@ function App() {
           <Header2 />
           <Header3 />
         </a>
-        <div className="test-font-kanit">Hello test FONT!</div>
+        <div className="test-font-kanit">Hello test FONT!!</div>
       </header>
     </div>
   );
