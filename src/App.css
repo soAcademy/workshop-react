@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.test-style {
+  color: #ff8807;
+  font-size: "40px";
+}
+
+.test-style-red {
+  background-color: azure;
+  color: #d91515;
+  font-size: "40px";
+}
+
+.test-style-green {
+  background-color: aqua;
+  color: #009910;
+  font-size: "40px";
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Prompt:wght@300;400&display=swap');
+
+.test-font-kanit {
+  font-family: 'Kanit', sans-serif;
+}
+

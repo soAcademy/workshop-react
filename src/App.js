@@ -1,25 +1,71 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import styles from "./App.module.css";
+import Header from "./Header";
+import { Header2, Header3 } from "./Header2";
 
-function App() {
+const App = () => {
+  const number = 3;
+  const customers = [
+    {
+      name: "Bin",
+      orderValue: 1400,
+    },
+    {
+      name: "Jam",
+      orderValue: 1500,
+    },
+    {
+      name: "Ploy",
+      orderValue: 2000,
+    },
+  ];
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
+        <p
+          style={{
+            color: "#ff8900",
+            fontSize: "50px",
+            backgroundColor: "green",
+          }}
+        >
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="test-style">Test Style</div>
+        <div
+          className={number % 2 === 0 ? "test-style-red" : "test-style-green"}
         >
-          Learn React
-        </a>
+          Test Style
+        </div>
+        <Header />
+        <Header2 />
+        <Header3 />
+
+        <table style={{ backgroundColor: "gray" }}>
+          <thead>
+            <th>ชื่อ</th>
+            <th>มูลค่าคำสั่งซื้อ</th>
+          </thead>
+          <tbody>
+            {customers.map((customer, idx) => (
+              <tr
+                className={
+                  idx % 2 === 0 ? "test-style-red" : "test-style-green"
+                }
+              >
+                <td>{customer.name}</td>
+                <td>{customer.orderValue}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <h1 style={{color: "#2596be"}}>Hello</h1>
       </header>
     </div>
   );
-}
+};
 
 export default App;
