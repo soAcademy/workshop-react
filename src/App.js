@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 style={{ color: "blue" }}>Hello Blue Header!</h1>
-        <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
+        <h1 style={{ color: "#4ecdc4" }}>Hello Blue Header!</h1>
+        <h1 style={{ backgroundColor: "#ff6b6b" }}>Hello Red Background!</h1>
         <div className="colBlueBackRed">Hello Style!</div>
       </header>
     </div>
