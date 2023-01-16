@@ -1,4 +1,4 @@
-.green-yellow-50px{
+/* .green-yellow-50px{
   color: green;
   background-color: yellow;
   font-size: 50px
@@ -8,4 +8,81 @@
   color: pink;
   font-family: 'Kanit', sans-serif;
   font-size: 50px;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+.container {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.left-section {
+  width: 30%;
+  background-color: rgb(74, 73, 73);
+  color: aliceblue;
+  padding: 25px 25px 25px 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  background-color: rgb(213, 222, 219);
+}
+
+.image-container {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+img {
+  max-width: 100%;
+}
+.about-me {
+  border-bottom: 1px solid rgb(236, 231, 231);
+}
+
+.my-name {
+  width: 35%;
+  border-bottom: 1px solid rgb(10, 9, 9);
+}
+.my-info {
+  width: 65%;
+  border-bottom: 1px solid rgb(10, 9, 9);
+}
+.work-exp {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-bottom: 20px;
+}
+.company-detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(10, 9, 9);
+}
+.company {
+  width: 25%;
+  padding: 5px;
+}
+.details {
+  width: 75%;
+  padding: 5px 5px 5px 20px;
+  border-left: 1px solid rgb(10, 9, 9);
+}
+.education {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
 }
