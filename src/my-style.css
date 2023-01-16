@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 .myStyle {
-  background-color: Red;
-  color: Blue;
-  font-family: Kanit;
+  background-color: rgb(255, 118, 118);
+  color: rgb(68, 68, 232);
+  font-family: 'Kanit';
   font-size: 24px;
+  display: inline-block;
+  padding: 0.5rem
 }

@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.question {
+  font-weight: bold;
+}
+
+.workshop-react-jsx {
+  background-color: antiquewhite;
+}
+
+.workshop-react-css {
+  background-color:rgb(139, 139, 139);
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
