@@ -6,17 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // const fullName = "Dominic Torretto";
+const displayName = (user) => {
+  return user.firstName + " " + user.lastName;
+};
 const user = {
   firstName: "Dominic",
   lastName: "Torretto",
 };
-const element = (
-  <div>
-    {user.firstName} {user.lastName}
-  </div>
-);
-// <div>firstName, lastName</div> renders "firstName, lastName"
-// fixed
+const element = <div>fullName</div>;
+// element renders "fullName"
 root.render(element);
 // root.render(
 //   <React.StrictMode>
