@@ -1,33 +1,34 @@
 // import logo from "./logo.svg";
-import "./App.css";
-import "./my-style.css";
-import myStyleModule from "./my-style.module.css";
+// import "./App.css";
+// import "./my-style.css";
+import "./tailwind.css";
+// import myStyleModule from "./my-style.module.css";
 // import Header from "./Header";
 // import { Header2, Header3 } from "./Header2";
 
 function App() {
-  const myStyle = {
-    color: "lightblue",
-    backgroundColor: "red",
-  };
-  const customers = [
-    {
-      name: "Bin",
-      orderValue: 1400,
-    },
-    {
-      name: "Jam",
-      orderValue: 1500,
-    },
-    {
-      name: "Ploy",
-      orderValue: 2000,
-    },
-  ];
+  // const myStyle = {
+  //   color: "lightblue",
+  //   backgroundColor: "red",
+  // };
+  // const customers = [
+  //   {
+  //     name: "Bin",
+  //     orderValue: 1400,
+  //   },
+  //   {
+  //     name: "Jam",
+  //     orderValue: 1500,
+  //   },
+  //   {
+  //     name: "Ploy",
+  //     orderValue: 2000,
+  //   },
+  // ];
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />
+      {/* <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
         <Header />
         <Header2 />
         <Header3 />
@@ -38,7 +39,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a> */}
+        </a>
         <h1 style={{ color: "lightblue" }}>Hello Blue Header!</h1>
         <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
         <div style={myStyle}>Hello Style!</div>
@@ -64,7 +65,8 @@ function App() {
             </tr>
           ))}
         </table>
-      </header>
+      </header> */}
+      <h1 className="text-3xl font-bold underline">Hello world!</h1>
     </div>
   );
 }
