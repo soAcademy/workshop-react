@@ -32,13 +32,10 @@
   font-weight: bold;
 }
 
-.workshop-react-jsx {
+.workshop-react-body {
   background-color: antiquewhite;
 }
 
-.workshop-react-css {
-  background-color:rgb(139, 139, 139);
-}
 
 
 @keyframes App-logo-spin {

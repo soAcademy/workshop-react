@@ -67,8 +67,8 @@ const App = () => {
           </a>
         </p>
       </header>
-      <div className="workshop-react-jsx">
-        <h1>Workshop JSX</h1>
+      <div className="workshop-react-body">
+        <h1 className='question-header'><u>Workshop JSX</u></h1>
         <p className="question">Question: 1</p>
         <p>{element1}</p>
         <p className="question">Question: 2</p>
@@ -84,7 +84,8 @@ const App = () => {
         <p className="question">Question: 7</p>
         <p>{element7}</p>
       </div>
-      <div className="workshop-react-css">
+      <div className="workshop-react-body">
+        <h1 className='question-header'><u>Workshop CSS</u></h1>
         <p className="question">Question: 1</p>
         <h1 style={{ color: "skyBlue" }}>Hello Blue Header!</h1>
         <p className="question">Question: 2</p>
