@@ -22,17 +22,17 @@ const element = (
   <div>
     <h1>Hello</h1>
     <h2>World!</h2>
-    {fullName}
+    <p>{fullName}</p>
     <br />
-    {1 + 1}
+    <p>{1 + 1}</p>
     <br />
-    {user.firstName + " " + user.lastName}
+    <p>{user.firstName + " " + user.lastName}</p>
     <br />
-    {displayName(user)}
+    <p>{displayName(user)}</p>
     <br />
-    {oddOrEven(9)}
+    <p>{oddOrEven(9)}</p>
     <br />
-    {oddOrEven(10)}
+    <p>{oddOrEven(10)}</p>
   </div>
 );
 
