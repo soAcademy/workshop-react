@@ -5,8 +5,9 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const fullName = "Dominic Torretto";
-const element = <div>{fullName}</div>;
+// const fullName = "Dominic Torretto";
+const element = <div>1 + 1</div>;
+// <div>1 + 1</div> renders "1 + 1"
 root.render(element);
 // root.render(
 //   <React.StrictMode>
