@@ -5,10 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const oddOrEven = (input)=>{
+  if(input % 2 !==0){
+    return "even";
+  }else{
+    return "odd";
+  }
+};
+
+const element = <div>
+    {oddOrEven(12)}
+</div>
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  element
 );
 
 // If you want to start measuring performance in your app, pass a function
