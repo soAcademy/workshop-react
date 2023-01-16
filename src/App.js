@@ -21,6 +21,11 @@ function App() {
     else return "odd";
   };
 
+  const myStyle = {
+    color: "blue",
+    backgroundColor: "red",
+  };
+
   return (
     <>
       <div>{element}</div>
@@ -29,6 +34,10 @@ function App() {
       <div>{element3}</div>
       <div>{user.firstName + "  " + user.lastName}</div>
       <div>{oddOrEven(100)}</div>
+      <h1 style={{ color: "blue" }}>Hello Blue Header!</h1>
+      <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
+      <div style={myStyle}>Hello Style!</div>
+      <div className="blue-with-red">ข้อ 4 CSS workshop + ข้อ 5 font kanit</div>
     </>
   );
 }
