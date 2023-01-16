@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './my-style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -27,8 +28,9 @@ const oddOrEven = (number) => {
   return number % 2 !== 0 ? 'odd' : 'even'
 } 
 const element7 = <div>Number 7 is {oddOrEven(7)}</div>
+const element8 = <div class='myStyle'>Hello Style!</div>
+root.render(element8);
 
-root.render(element7);
 
 // results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

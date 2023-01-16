@@ -7,7 +7,8 @@ const App = () => {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello React !!!
+        <h1 style= {{color: "blue"}}>Hello Blue Header!</h1>
+        <h1 style= {{backgroundColor: "red"}}>Hello Red Background!</h1>
         </p>
         <p>
         <a
