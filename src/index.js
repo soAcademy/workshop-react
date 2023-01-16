@@ -5,17 +5,10 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// const fullName = "Dominic Torretto";
-const displayName = (user) => {
-  return user.firstName + " " + user.lastName;
-};
-const user = {
-  firstName: "Dominic",
-  lastName: "Torretto",
-};
-const element = <div>{displayName(user)}</div>;
-// element renders "fullName"
-// fixed
+
+const oddOrEven = (number) => (number % 2 === 0 ? "even" : "odd");
+
+const element = <div>{oddOrEven(3)}</div>;
 root.render(element);
 // root.render(
 //   <React.StrictMode>
