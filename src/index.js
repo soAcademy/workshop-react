@@ -5,14 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// const element = <div>Hello</div>;
-const element = (
 
-  <div>
-  <h1>Hello</h1>
-  <h2>World!</h2>
-  </div>
-  )
+
+
+root.render(<App />);
+// const element = <div>Hello</div>;
+// const element = (
+
+//   <div>
+//   <h1>Hello</h1>
+//   <h2>World!</h2>
+//   </div>
+//   )
 
 // const fullName = 'Poovares Kongkarchui';
 // const element = <div>{fullName}</div>
@@ -31,7 +35,7 @@ const element = (
 // }
 // const element = <div>{ oddOrEven(100) }</d>
 
-// root.render(element);
+
     
 
   
@@ -45,3 +49,4 @@ const element = (
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
