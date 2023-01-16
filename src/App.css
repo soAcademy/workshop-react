@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.test-font-kanit {
+  font-family: 'Kanit', sans-serif;
+  font-size: 24px;
+}

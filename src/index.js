@@ -5,18 +5,13 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const oddOrEven = (number) => {
-  if (number % 2 === 0) {
-    return "even";
-  } else {
-    return "odd";
-  }
-};
-const number = 1;
-const element = <div>{oddOrEven(number)}</div>;
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
-root.render(element);
-
+// Workshop Quiz
 // Quiz 1
 // const element = <div>Hello</div>;
 
