@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "./my-style.css";
+import styles from "./my-style.module.css";
 import Header from "./Header";
 import { Header2, Header3 } from "./Header2";
 
@@ -68,7 +68,7 @@ const App = () => {
         </p>
       </header>
       <div className="workshop-react-body">
-        <h1 className='question-header'><u>Workshop JSX</u></h1>
+        <h1 className='workshop-header'><u>Workshop JSX</u></h1>
         <p className="question">Question: 1</p>
         <p>{element1}</p>
         <p className="question">Question: 2</p>
@@ -85,7 +85,7 @@ const App = () => {
         <p>{element7}</p>
       </div>
       <div className="workshop-react-body">
-        <h1 className='question-header'><u>Workshop CSS</u></h1>
+        <h1 className={styles['workshop-header']}><u>Workshop CSS</u></h1>
         <p className="question">Question: 1</p>
         <h1 style={{ color: "skyBlue" }}>Hello Blue Header!</h1>
         <p className="question">Question: 2</p>
