@@ -4,6 +4,10 @@ import "./App.css";
 // import { Header2, Header3 } from "./Header2";
 
 function App() {
+  const myStyle = {
+    color: "lightblue",
+    backgroundColor: "red",
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -21,6 +25,7 @@ function App() {
         </a> */}
         <h1 style={{ color: "lightblue" }}>Hello Blue Header!</h1>
         <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
+        <div style={myStyle}>Hello Style!</div>
       </header>
     </div>
   );
