@@ -13,8 +13,9 @@ const user = {
   firstName: "Dominic",
   lastName: "Torretto",
 };
-const element = <div>fullName</div>;
+const element = <div>{displayName(user)}</div>;
 // element renders "fullName"
+// fixed
 root.render(element);
 // root.render(
 //   <React.StrictMode>
