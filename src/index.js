@@ -7,7 +7,10 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
-// root.render(<App />);
+root.render(element);
+// อะไรก็ตามที่เราเอามา render มันจะมาปรากฎบนหน้าจอ
+// แล้วช่วงบ่ายเราก็มาสร้าง css โดยการ import App เข้ามาเลย พอเราเปลี่ยนจาก element มาเป็น App เราก็มาเปลี่ยน app 
+
 
 //1.ประกาศตัวแปรชื่อ element ให้มีค่าเป็น div ที่มี string เป็น Hello
 // const element = <div>Hello</div>;
@@ -40,23 +43,24 @@ const root = ReactDOM.createRoot(
 
 
 // 6. จากตัวอย่างข้างต้น จงแก้ไขตัวแปร element ให้เรียกการใช้งานฟังก์ชัน displayName เพื่อทําการแสดง full name ได้
+// const displayName = (uesr) => {
+//   return user.firstName + ''+ user.lastName
+// }
 // const user = {
 //   firstName: 'Bond',
 //   lastName: 'Bond'
 // }
-// const displayName => {
-  
-// }
 // const element = <div>{ displayName(user) }</div>
 
 // 7. จงเขียนฟังก์ชันชื่อ oddOrEven ที่รับ parameter ชื่อ number โดยฟังก์ชันจะทําการ return string ว่า “odd” หาก input number เป็นเลขคี่และ return string ว่า “even” หาก input number เป็นเลขคู่
-// const oddOrEven = (number) => {
-//   if (number % 2 === 0)
-//   return 'even'
-//   else
-//   return 'odd'
-//   }
-//   const element = <div>{ oddOrEven(100) }</div>
+const oddOrEven = (number) => {
+  if (number % 2 === 0)
+  return 'even'
+  else
+  return 'odd'
+  }
+  const element = <div>{ oddOrEven(100) }</div>
+
 root.render(element);
 reportWebVitals();
 // If you want to start measuring performance in your app, pass a function
