@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import "./my-style.css";
+import myStyleModule from "./my-style.module.css";
 // import Header from "./Header";
 // import { Header2, Header3 } from "./Header2";
 
@@ -28,6 +29,9 @@ function App() {
         <h1 style={{ backgroundColor: "red" }}>Hello Red Background!</h1>
         <div style={myStyle}>Hello Style!</div>
         <div className="my-style">Hello Style from external CSS!</div>
+        <div className={myStyleModule["my-style"]}>
+          Hello Style from CSS modules!
+        </div>
       </header>
     </div>
   );
