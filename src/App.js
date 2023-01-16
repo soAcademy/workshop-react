@@ -7,8 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Hello React !!!
         </p>
+        <p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +18,16 @@ function App() {
         >
           Learn React
         </a>
+        &nbsp;&nbsp;
+        <a
+          className="App-link"
+          href="https://chat.openai.com/chat"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ask ChatGPT
+        </a>
+        </p>
       </header>
     </div>
   );
