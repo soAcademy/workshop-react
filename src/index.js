@@ -6,8 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // const fullName = "Dominic Torretto";
-const element = <div>1 + 1</div>;
+const element = <div>{1 + 1}</div>;
 // <div>1 + 1</div> renders "1 + 1"
+// fixed by replace with <div>{1 + 1}</div>
 root.render(element);
 // root.render(
 //   <React.StrictMode>
