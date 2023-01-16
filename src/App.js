@@ -4,6 +4,10 @@ import styles from "./App.module.css";
 import Header from "./Header";
 import { Header2, Header3 } from "./Header2";
 
+import DoubleHippo2 from "./hippo2.jpg";
+
+const f1 = (x) => x * 3;
+
 const App = () => {
   const number = 3;
   const customers = [
@@ -20,6 +24,24 @@ const App = () => {
       orderValue: 2000,
     },
   ];
+  const products = ["Collagen", "Vitamin C", "Fiber"];
+
+  const totalOrder = customers.reduce((acc, r) => acc + r.orderValue, 0);
+
+  const aboutMe = "My name is...";
+  const workExperiences = [
+    {
+      company: "",
+      jobDescription: "",
+      year: ""
+    }
+  ]
+
+  const educations = [{
+    school: "",
+    year: "",
+    gpa: ""
+  }]
 
   return (
     <div className="App">
@@ -35,16 +57,18 @@ const App = () => {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <div className="test-style">Test Style</div>
+        <div className={styles["test-styles-red"]}>Test Style</div>
         <div
           className={number % 2 === 0 ? "test-style-red" : "test-style-green"}
         >
           Test Style
         </div>
+        <div>Total Order: {totalOrder}</div>
         <Header />
         <Header2 />
         <Header3 />
         <div className="test-font-kanit">ทดสอบ Font Kanit</div>
-        <div style={{fontFamily: "Kanit"}}>ทดสอบ Font Kanit 2</div>
+        <div style={{ fontFamily: "Kanit" }}>ทดสอบ Font Kanit 2</div>
         <table style={{ backgroundColor: "gray" }}>
           <thead>
             <th>ชื่อ</th>
@@ -63,7 +87,20 @@ const App = () => {
             ))}
           </tbody>
         </table>
-        <h1 style={{color: "#2596be"}}>Hello</h1>
+        <h1 style={{ color: "#2596be" }}>Hello</h1>
+        <img
+          style={{ width: "200px" }}
+          src="https://img.freepik.com/premium-vector/cute-hippo-mascot-character-logo-cartoon-icon-illustration-flat-cartoon-style-design_422763-842.jpg?w=2000"
+        />
+        <img style={{ width: "200px" }} src="/hippo1.jpg" />
+        <img style={{ width: "200px" }} src={DoubleHippo2} />
+        {number === 3 && (
+          <ul>
+            {products.map((product) => (
+              <li>{product}</li>
+            ))}
+          </ul>
+        )}
       </header>
     </div>
   );
