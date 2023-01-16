@@ -6,9 +6,12 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // const fullName = "Dominic Torretto";
-const element = <div>{1 + 1}</div>;
-// <div>1 + 1</div> renders "1 + 1"
-// fixed by replace with <div>{1 + 1}</div>
+const user = {
+  firstName: "Dominic",
+  lastName: "Torretto",
+};
+const element = <div>firstName, lastName</div>;
+// <div>firstName, lastName</div> renders "firstName, lastName"
 root.render(element);
 // root.render(
 //   <React.StrictMode>
