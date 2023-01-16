@@ -10,8 +10,13 @@ const user = {
   firstName: "Dominic",
   lastName: "Torretto",
 };
-const element = <div>firstName, lastName</div>;
+const element = (
+  <div>
+    {user.firstName} {user.lastName}
+  </div>
+);
 // <div>firstName, lastName</div> renders "firstName, lastName"
+// fixed
 root.render(element);
 // root.render(
 //   <React.StrictMode>
