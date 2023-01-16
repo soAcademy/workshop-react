@@ -46,13 +46,19 @@ function App() {
         <div className={myStyleModule["my-style"]}>
           Hello Style from CSS modules!
         </div>
-        <table>
-          <thead>
+        <table className={myStyleModule["table-style"]}>
+          <thead className={myStyleModule["table-head-style"]}>
             <th>Name</th>
             <th>Order Value</th>
           </thead>
-          {customers.map((customer) => (
-            <tr>
+          {customers.map((customer, index) => (
+            <tr
+              className={
+                index % 2 === 0
+                  ? myStyleModule["table-row-style-odd"]
+                  : myStyleModule["table-row-style-even"]
+              }
+            >
               <td>{customer.name}</td>
               <td>{customer.orderValue}</td>
             </tr>

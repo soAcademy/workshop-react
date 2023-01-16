@@ -5,3 +5,22 @@
   background-color: red;
   font-family: "Kanit", sans-serif;
 }
+
+.table-style {
+  border: 1px solid black;
+}
+
+.table-head-style {
+  color: black;
+  background-color: gray;
+}
+
+.table-row-style-odd {
+  color: red;
+  background-color: lightsalmon;
+}
+
+.table-row-style-even {
+  color: green;
+  background-color: lightgreen;
+}
