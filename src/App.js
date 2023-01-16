@@ -66,7 +66,10 @@ function App() {
           ))}
         </table>
       </header> */}
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <div className="flex flex-row h-screen">
+        <div className="basis-1/4 bg-indigo-500">side content</div>
+        <div className="basis-3/4">main content</div>
+      </div>
     </div>
   );
 }
