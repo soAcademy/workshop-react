@@ -97,13 +97,13 @@ const Resume = () => {
             </div>
             <div className="contact-block">
               <p>
-                <FaHome /> {addr.address}
+                <FaHome size={18}/><span>{addr.address}</span>
               </p>
               <p>
-                <FaMobileAlt /> {addr.tel}
+                <FaMobileAlt size={18}/><span>{addr.tel}</span>
               </p>
               <p>
-                <FaRegEnvelope /> {addr.email}
+                <FaRegEnvelope size={18}/><span>{addr.email}</span>
               </p>
             </div>
           </div>
