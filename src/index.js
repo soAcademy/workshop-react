@@ -3,16 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './my-style.css'
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
 root.render(<App />);
 // root.render("Hello World!");
-<div className='blue-with-red'>Hello Style!</div>
-
-
+  
 // root.render(element);
 reportWebVitals();
 

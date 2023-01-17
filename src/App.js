@@ -31,7 +31,7 @@ import Header from './Header.js';
 
 // 1. เปลี่ยนสีคำโดยใช้ Inline
   // function App() {
-  //   //ตรงนี้ใไว้เขียน HTML Code ไว้ได้เลย โดยเราจะประกาศตัวแปรก่อน return เช่นพวกชื่อลูกค้าและอื่น ๆ แล้วข้างนอกมันคือส่วนใหญ่จะเป็นชื่อ Component หรือเป็น Function ที่ยาว ๆ มาก ๆ ก็มาตั้งเป็นฟังก์ชัน
+    //ตรงนี้ใไว้เขียน HTML Code ไว้ได้เลย โดยเราจะประกาศตัวแปรก่อน return เช่นพวกชื่อลูกค้าและอื่น ๆ แล้วข้างนอกมันคือส่วนใหญ่จะเป็นชื่อ Component หรือเป็น Function ที่ยาว ๆ มาก ๆ ก็มาตั้งเป็นฟังก์ชัน
   //     return (
   //       <h1 style={{color: "blue"}}>Hello Blue Header!</h1>
   //     );
@@ -46,7 +46,7 @@ import Header from './Header.js';
     //  }
     //   export default App;
 
-  // 3. ประกาศ Object myStyle เพื่อเปลี่ยน element ให้มีข้อความสีฟ้าพื้นหลังสีแดง
+  // 3. ทำไมไ่ม่ได้ เพราะอะไร? ประกาศ Object myStyle เพื่อเปลี่ยน element ให้มีข้อความสีฟ้าพื้นหลังสีแดง
       // function App() {
       //     return (
       //       const myStyle = {
@@ -58,10 +58,18 @@ import Header from './Header.js';
       // }
       // export default App;
 
-    // 4. จากข้อ 3 จงสร้างไฟล์ my-style.css และย้าย object ไปเรียกใช้ css ผ่านไฟล์นั้น
-      function App() {
-        return (
-          <h1 style={{backgroundColor: "red"}}>Hello Red Background!</h1>
-       );
-     }
-      export default App;
+  // 4. ทำไมมันถึงขึ้นมาอ่ะยังไม่ได้อันนี้ import file มาเลยจากข้อ 3 จงสร้างไฟล์ my-style.css และย้าย object ไปเรียกใช้ css ผ่านไฟล์นั้น
+  //       function App() {
+  //         return (
+  //         <h1 style={{backgroundColor: "red"}}>Hello Red Background!</h1>
+  //      );
+  //    }
+  //     export default App;
+
+  // 5. งง? จากข้อที่แล้ว ให้เราเปลี่ยน Font ให้เป็น Font Kanit ที่มีขนาด 24px
+  //     function App() {
+  //       return (
+  //       <h1 style={{backgroundColor: "red"}}>Hello Red Background!</h1>
+  //    );
+  //  }
+  //   export default App;
