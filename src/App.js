@@ -5,7 +5,7 @@
 // import myStyleModule from "./my-style.module.css";
 // import Header from "./Header";
 // import { Header2, Header3 } from "./Header2";
-import ProductCard from "./ProductCard";
+import ProductPage from "./ProductPage";
 
 function App() {
   const myCV = {
@@ -61,14 +61,7 @@ function App() {
     //   </button>
     // </div>
     <div>
-      <div className="bg-gray-800 text-gray-50 px-4 py-6 text-2xl font-bold text-center">
-        Welcome to Apple
-      </div>
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 p-4 bg-gray-500">
-        {[...Array(8).keys()].map(() => (
-          <ProductCard />
-        ))}
-      </div>
+      <ProductPage />
     </div>
   );
 }
