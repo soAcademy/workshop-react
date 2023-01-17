@@ -1,5 +1,6 @@
 import React from "react";
 import { myImg } from "../../myInformation";
+import ProductCard from "../ProductCard/ProductCard";
 
 function PlaygroundTailwind() {
   return (
@@ -101,6 +102,18 @@ focus:ring-violet-300 w-[250px] h-[40px] rounded-[20px] text-white"
             buy now !
           </button>
         </div>
+      </div>
+
+      <div
+        className="w-full grid gap-4 place-items-center
+grid-flow-row auto-rows-max grid-cols-1 md:grid-cols-3"
+      >
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </>
   );

@@ -5,12 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./my-style.css";
 import PlaygroundTailwind from "./components/playgroundTailwind/PlaygroundTailwind";
+import ProductCard from "./components/ProductCard/ProductCard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
     <PlaygroundTailwind />
+    {/* <ProductCard /> */}
   </React.StrictMode>
 );
 
