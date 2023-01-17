@@ -6,24 +6,24 @@ import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // const fullName = 'Dominic Torretto';
-const user = {
-  firstName: "Dominic",
-  lastName: "Torretto",
-};
+// const user = {
+//   firstName: "Dominic",
+//   lastName: "Torretto",
+// };
 
-const displayName = (user) => {
-  return user.firstName + " " + user.lastName;
-};
+// const displayName = (user) => {
+//   return user.firstName + " " + user.lastName;
+// };
 
-const oddOrEven = (num) => (num % 2 === 0 ? "even" : "odd");
+// const oddOrEven = (num) => (num % 2 === 0 ? "even" : "odd");
 // const element = <div><h1>Hello</h1><h2>World!</h2></div>;
 // const element = <div>{fullName}</div>
-const element = (
-  <div>
-    {displayName(user)}
-    <div>{oddOrEven(5)}</div>
-  </div>
-);
+// const element = (
+//   <div>
+//     {displayName(user)}
+//     <div>{oddOrEven(5)}</div>
+//   </div>
+// );
 // root.render(element);
 root.render(<App />);
 
