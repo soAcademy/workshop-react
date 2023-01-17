@@ -1,5 +1,6 @@
 import "./App.css";
 import "./App-3.css";
+import Product from "./Product";
 
 const App = () => {
   return (
@@ -23,27 +24,17 @@ focus:ring focus:ring-red-800 rounded-xl"
       </button>
 
       <div className="pb-64"></div> */}
-      <div className="p-5 m-10 max-w-sm rounded-xl border bg-gray-700 shadow-xl">
-        <img className="w-full rounded-xl" src="gorilla.jpg" />
-        <div className="mt-5">
-          <h5 className="font-bold text-2xl text-white">
-            New! Cute Teddy Doll
-          </h5>
-          <p className="pt-2 text-md text-gray-400">
-            Teddy Bear White color.....
-          </p>
-          <p className="pt-2 pb-2 italic text-sm text-right text-yellow-400">
-            ฿399.00
-          </p>
-          <div className="flex">
-            <button
-              className="mx-auto w-64 pt-2 pb-2 text-md rounded-xl font-medium text-white
-bg-red-600 rounded-full hover:bg-red-500"
-            >
-              Buy Now !
-            </button>
-          </div>
+
+      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        {[0, 1, 2].map(() => (
+          <Product />
+        ))}
         </div>
+        <p>- - - sept fn here - - -</p>
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
+        {[...Array(9).keys()].map(() => (
+          <Product />
+        ))}
       </div>
     </>
   );
