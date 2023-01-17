@@ -25,7 +25,7 @@ const App = () => {
       <p className="italic">Hello World</p>
       <p className="underline">Hello World</p>
       <p className="text-green-300 text-center font-bold underline italic">
-        Text Combo
+      Hello World
       </p>
       <div className="bg-yellow-300">Hello World</div>
       <div className="bg-red-300 pt-4">Hello World</div>
@@ -39,9 +39,9 @@ const App = () => {
       <div className="bg-orange-400 p-4">Hello World</div>
       <div className="bg-green-400 m-4">Hello World</div>
       <div className="flex bg-blue-400 space-x-16">
-        <div className="bg-red-400">01</div>
-        <div className="bg-orange-400">02</div>
-        <div className="bg-gray-400">03</div>
+        <div className="bg-red-400">Hello World</div>
+        <div className="bg-orange-400">Hello World</div>
+        <div className="bg-gray-400">Hello World</div>
       </div>
 
 
