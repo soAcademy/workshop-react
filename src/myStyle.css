@@ -1,15 +1,28 @@
 .blue-background{
   
     color:red;
-    background-color: blue;
+    background-color: rgb(255, 255, 255);
   
   
-}
+} @import url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1280px-Star_Wars_Logo.svg.png');
 
   @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 .blue-with-red-kanit{
   color: rgb(255, 255, 255);
   background-color: brown;
-  font-size: 24px;
+  font-size: 40px;
   font-family: "Kanit";
+}
+
+.arrign-center{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border: 10px solid red;
+  background-color: black;
+  height: 800px;
+}
+.img{
+  background-image: url('Star_Wars_Logo.svg.png');
+  color: aliceblue;
 }
