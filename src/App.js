@@ -55,6 +55,9 @@ function App() {
       <div className="bg-blue-500 w-12 h-12 rounded-2xl">Hello sizing!</div>
       <div className="bg-indigo-500 w-12 h-12 rounded-full">Hello sizing!</div>
       <div className="bg-violet-500 w-64 h-12 rounded-full">Hello sizing!</div>
+      <button className="bg-pink-500 m-4 w-36 h-12 text-center rounded-full border-2 border-dashed border-blue-500 hover:bg-rose-500">
+        Hello button!
+      </button>
     </div>
   );
 }
