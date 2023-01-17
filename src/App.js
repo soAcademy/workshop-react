@@ -61,7 +61,16 @@ function App() {
     //   </button>
     // </div>
     <div>
-      <ProductCard />
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 p-4 bg-gray-500">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+      </div>
     </div>
   );
 }
