@@ -1,5 +1,5 @@
 const Product = () => (
-  <div class="bg-slate-700 mt-4 p-4 rounded-md">
+  <div class="bg-slate-700 mt-4 p-4 rounded-md shadow-xl">
     <div>
       <img
         className="w-full rounded-md"
@@ -13,7 +13,7 @@ const Product = () => (
     <div className="text-right text-amber-500 text-xs ml-4">23,500 บาท</div>
 
     <div className="mt-2 w-full flex">
-      <button className="w-3/4 mx-auto text-center rounded-md bg-blue-300 hover:bg-blue-400 active:bg-amber-400 py-2">
+      <button className="w-3/4 mx-auto text-center rounded-md bg-blue-300 hover:bg-blue-400 active:bg-amber-400 py-2 shadow">
         Buy Now
       </button>
     </div>

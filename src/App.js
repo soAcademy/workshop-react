@@ -103,12 +103,10 @@ const App = () => {
         <div className="bg-red-600">6</div>
       </div>
 
-      <div className="grid gap-2 grid-cols md:grid-cols-2 lg:grid-cols-3">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+      <div className="grid gap-2 grid-cols sm:grid-cols-2 md:grid-cols-3">
+        {[...Array(7).keys()].map(() => (
+          <Product />
+        ))}
       </div>
 
       <div className="">
