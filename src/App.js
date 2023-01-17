@@ -23,8 +23,8 @@ focus:ring focus:ring-red-800 rounded-xl"
       </button>
 
       <div className="pb-64"></div> */}
-      <div className="p-5 max-w-sm rounded-xl border bg-gray-700 shadow-xl">
-        <img className="w-full rounded-xl" src="gorilla.jpg"/>
+      <div className="p-5 m-10 max-w-sm rounded-xl border bg-gray-700 shadow-xl">
+        <img className="w-full rounded-xl" src="gorilla.jpg" />
         <div className="mt-5">
           <h5 className="font-bold text-2xl text-white">
             New! Cute Teddy Doll
@@ -35,12 +35,14 @@ focus:ring focus:ring-red-800 rounded-xl"
           <p className="pt-2 pb-2 italic text-sm text-right text-yellow-400">
             ฿399.00
           </p>
-          <button
-            className="w-full mt-5 pt-2 pb-2 text-md rounded-xl font-medium text-white
-bg-red-600 rounded-lg hover:bg-red-500"
-          >
-            Buy Now!
-!          </button>
+          <div className="flex">
+            <button
+              className="mx-auto w-64 pt-2 pb-2 text-md rounded-xl font-medium text-white
+bg-red-600 rounded-full hover:bg-red-500"
+            >
+              Buy Now !
+            </button>
+          </div>
         </div>
       </div>
     </>
