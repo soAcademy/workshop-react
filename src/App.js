@@ -68,9 +68,11 @@ const App = () => {
       </div>
 
       <div className="w-64 bg-red-700 rounded-lg">
-        <div className="w-2/3 bg-green-300 rounded-full p-4">
-          Hello World
-        </div>
+        <div className="w-2/3 bg-green-300 rounded-full p-4">Hello World</div>
+      </div>
+
+      <div className="w-64 bg-gray-300 border-2 border-rose-300 border-dotted mt-4 py-2 text-center rounded-full">
+        Hello World
       </div>
       <div className="pb-64"></div>
     </>
