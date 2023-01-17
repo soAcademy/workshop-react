@@ -29,6 +29,32 @@ font-bold"
       <div className="w-2/3 bg-red-400">Hello World</div>
       <div className="w-full bg-red-300">w-full</div>
       <div className="w-24 h-24 bg-red-200 rounded-lg">w-24 h-24</div>
+
+      <div className="w-64 bg-gray-300 mt-[20px] border border-indigo-600">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-4 border-indigo-600">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-8 border-indigo-600">
+        Hello World
+      </div>
+
+      <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600 rounded-[20px]">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600 rounded-md">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600 rounded-lg">
+        Hello World
+      </div>
+      <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600 rounded-full">
+        Hello World
+      </div>
     </>
   );
 }
