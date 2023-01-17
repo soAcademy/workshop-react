@@ -74,6 +74,38 @@ const App = () => {
       <div className="w-64 bg-gray-300 border-2 border-rose-300 border-dotted mt-4 py-2 text-center rounded-full">
         Hello World
       </div>
+
+      <button className="w-64 p-4 rounded-full bg-sky-600 hover:bg-sky-400 active:bg-red-300">
+        Hello World
+      </button>
+      <div className="bg-red-300 md:bg-red-500 lg:bg-red-700 m-4">
+        Hello World
+      </div>
+      <button className="w-12 md:w-24 lg:w-36 p-4 rounded-full bg-sky-600 hover:bg-sky-400 active:bg-red-300">
+        Hello World
+      </button>
+      <div className="flex bg-red-200 mt-2">
+        <div className="w-1/2 md:w-1/3 lg:w-1/4 bg-green-300">Hello World</div>
+        <div className="w-1/2 md:w-2/3 lg:w-3/4 bg-yellow-300">Hello World</div>
+      </div>
+      <div class="w-1/3 bg-slate-700 mt-4 p-4 rounded-md">
+        <div>
+          <img
+            className="w-full rounded-md"
+            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617559"
+          />
+        </div>
+        <div>
+          <h1 className="text-xl text-white mt-4 font-bold">Iphone Pro Max</h1>
+        </div>
+        <p className="text-gray-300 mt-2">Lorem ......</p>
+        <div className="text-right text-amber-500 text-xs">23,500 บาท</div>
+        <div>
+          <button className="w-full rounded-md bg-blue-300 hover:bg-blue-400 active:bg-amber-400  py-2 mt-2">
+            Buy Now
+          </button>
+        </div>
+      </div>
       <div className="pb-64"></div>
     </>
   );
