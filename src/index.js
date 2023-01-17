@@ -3,15 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Header, { TestExport } from "./Header";
 import "./my-style.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
-    <Header />
-    <TestExport />
+    {/* <Header />
+    <TestExport /> */}
   </React.StrictMode>
 );
 
