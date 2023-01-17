@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,9 +34,94 @@
 
 .workshop-react-body {
   background-color: antiquewhite;
+} */
+
+.container {
+  margin: 0px 0px;
+  padding: 0px 0px;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-items: center;
+  width: 800px;
+  height: 800px;
+  background-color: antiquewhite;
+}
+.left {
+  width: 30%;
+  height: auto;
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.right {
+  width: auto;
+  height: auto;
+}
+.profile-block {
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-picture {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-image: url("../public/profile.jpg");
+  background-size: cover;
+}
+.about-me {
+  margin: 0 1rem;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.about-me p {
+  font-size: 11px;
+}
+.social-links {
+  padding: 0 0;
+  margin: 0;
+  height: 35%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.social-links div {
+  padding: 0 15px;
+}
+h3 {
+  text-shadow: 3px 3px 25px rgba(0, 0, 0, 0.71);
+  margin: 0 auto;
 }
 
-
+.social-icon {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+.social-icon #platform {
+  font-size: 15px;
+}
+.social-icon .url {
+  font-size: 12px;
+}
+.social-icon img {
+  width: 25px;
+  height: 25px;
+}
+a.social-icon {
+  text-decoration: none;
+  color: white;
+}
+a.social-icon:visited {
+  color: white;
+}
+.social-link-texts {
+  line-height: 1.2rem;
+  text-shadow: 3px 3px 25px rgba(0, 0, 0, 0.71);
+}
 
 @keyframes App-logo-spin {
   from {
