@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Header from "./header";
 import { Header2, Header3 } from "./header2";
-import "./my-style.css";
+import "./App-0.css";
 import pic1 from "./squirrel.jpg";
 
 const App = () => {

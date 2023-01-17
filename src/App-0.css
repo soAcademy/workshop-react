@@ -1,0 +1,11 @@
+.green-yellow-50px{
+  color: green;
+  background-color: yellow;
+  font-size: 50px
+}
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Rubik:wght@300&display=swap');
+.try-font{
+  color: pink;
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+}

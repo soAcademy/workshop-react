@@ -1,20 +1,7 @@
-/* .green-yellow-50px{
-  color: green;
-  background-color: yellow;
-  font-size: 50px
-}
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Rubik:wght@300&display=swap');
-.try-font{
-  color: pink;
-  font-family: 'Kanit', sans-serif;
-  font-size: 50px;
-} */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 .container {
   display: flex;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -34,14 +21,16 @@
   justify-content: start;
   background-color: rgb(213, 222, 219);
 }
+.right-top {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: 1px solid rgb(10, 9, 9);
+}
 
 .image-container {
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  /* width: 100%;
-  border-radius: 50%; */
-
 }
 img {
   max-width: 100%;
@@ -56,11 +45,10 @@ img {
 
 .my-name {
   width: 35%;
-  border-bottom: 1px solid rgb(10, 9, 9);
 }
 .my-info {
   width: 65%;
-  border-bottom: 1px solid rgb(10, 9, 9);
+  margin-left: 30px;
 }
 .work-exp {
   display: flex;
