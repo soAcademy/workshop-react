@@ -1,5 +1,6 @@
 import "./resume.css";
 import { FaHome, FaMobileAlt, FaRegEnvelope } from "react-icons/fa";
+import userImg from "./user1.jpg";
 
 const Resume = () => {
   const about =
@@ -66,7 +67,7 @@ const Resume = () => {
       <div className="container">
         <div className="left">
           <div className="img-block">
-            <img src="/user1.jpg" alt="logo" />
+            <img src={userImg} alt="logo" />
           </div>
           <div className="about">
             <h2>ABOUT ME</h2>
