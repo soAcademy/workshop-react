@@ -37,8 +37,27 @@
   }
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
-.test-font-kanit {
-  font-family: 'Kanit', sans-serif;
-  font-size: 24px;
+.profilepic {
+  width: 250px;
+  height: 250px;
+  margin: 40px;
+}
+
+.rightbox {
+  height: 100%;
+  width: 30%;
+}
+
+.leftbox {
+  height: 1000px;
+  width: 30%;
+  background-color: bisque;
+}
+
+.aboutme {
+  margin: 40px;
+}
+
+.link {
+  margin: 40px;
 }
