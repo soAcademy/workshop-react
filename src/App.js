@@ -1,3 +1,5 @@
+import Product from "./Product";
+
 const App = () => {
   return (
     <>
@@ -88,24 +90,49 @@ const App = () => {
         <div className="w-1/2 md:w-1/3 lg:w-1/4 bg-green-300">Hello World</div>
         <div className="w-1/2 md:w-2/3 lg:w-3/4 bg-yellow-300">Hello World</div>
       </div>
-      <div class="w-1/3 bg-slate-700 mt-4 p-4 rounded-md">
-        <div>
-          <img
-            className="w-full rounded-md"
-            src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-14-pro-model-unselect-gallery-2-202209?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1660753617559"
-          />
-        </div>
-        <div>
-          <h1 className="text-xl text-white mt-4 font-bold">Iphone Pro Max</h1>
-        </div>
-        <p className="text-gray-300 mt-2">Lorem ......</p>
-        <div className="text-right text-amber-500 text-xs">23,500 บาท</div>
-        <div>
-          <button className="w-full rounded-md bg-blue-300 hover:bg-blue-400 active:bg-amber-400  py-2 mt-2">
-            Buy Now
-          </button>
-        </div>
+
+      <div className="w-[400px] h-[100px] bg-red-700">Hello World</div>
+      <Product />
+
+      <div className="grid gap-2 grid-cols-3">
+        <div className="bg-red-100">1</div>
+        <div className="bg-red-200">2</div>
+        <div className="bg-red-300">3</div>
+        <div className="bg-red-400">4</div>
+        <div className="bg-red-500">5</div>
+        <div className="bg-red-600">6</div>
       </div>
+
+      <div className="grid gap-2 grid-cols md:grid-cols-2 lg:grid-cols-3">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </div>
+
+      <div className="">
+        <div className="w-1/3 bg-yellow-100">Hello</div>
+        <div className="w-2/3 bg-green-100">Hello</div>
+      </div>
+
+      <div className="flex">
+        <div className="w-1/3 bg-yellow-200">Hello</div>
+        <div className="w-2/3 bg-green-200">Hello</div>
+      </div>
+
+      <div className="flex">
+        <div className="w-4/6 bg-yellow-300">Hello</div>
+        <div className="w-1/6 bg-green-300">Hello</div>
+        <div className="w-1/6 bg-blue-300">Hello</div>
+      </div>
+
+      <div className="flex w-full">
+        <div className="w-64 bg-red-300">Hello</div>
+        <div className="flex-auto bg-orange-300">Hello</div>
+        <div className="w-1/6 bg-gray-300">Hello</div>
+      </div>
+
       <div className="pb-64"></div>
     </>
   );
