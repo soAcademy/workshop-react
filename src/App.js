@@ -12,6 +12,8 @@ function App() {
     lastName: "Johnson",
   };
 
+  const { firstName, lastName } = myCV;
+
   return (
     <div className="App">
       <div className="flex flex-row h-screen">
@@ -20,7 +22,7 @@ function App() {
         </div>
         <div className="basis-3/4 p-4">
           <h1 className="text-2xl">
-            {myCV.firstName} {myCV.lastName}
+            {firstName} {lastName}
           </h1>
         </div>
       </div>
