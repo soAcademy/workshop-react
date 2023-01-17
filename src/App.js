@@ -66,7 +66,7 @@ function App() {
       <div className="w-24 h-38 bg-blue-500">w-24</div>
       <div className="w-1/2 h-38 bg-yellow-300 rounded-lg">w-1/2</div>
       <button className="w-24 bg-green-200 hover:bg-green-800">Button 1</button>
-      <button className="w-36 bg-red-200 active:bg-red-500 focus:border focus:border-red-800">
+      <button className="w-36 bg-red-200 active:bg-red-500 focus:outline-none focus:ring focus:ring-red-800">
         Button 2
       </button>
     </div>
