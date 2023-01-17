@@ -15,6 +15,20 @@ font-bold"
       >
         Hello World
       </div>
+
+      <div className="bg-green-500 pt-6">pt-6</div>
+      <div className="bg-blue-500 mr-6">mr-6</div>
+      <div className="bg-blue-500 mt-8">mt-8</div>
+      <div className="flex space-x-10">
+        <div className="bg-red-400">01</div>
+        <div className="bg-orange-400">02</div>
+        <div className="bg-gray-400">03</div>
+      </div>
+
+      <div className="w-24 bg-red-700 text-white">Hello World</div>
+      <div className="w-2/3 bg-red-400">Hello World</div>
+      <div className="w-full bg-red-300">w-full</div>
+      <div className="w-24 h-24 bg-red-200 rounded-lg">w-24 h-24</div>
     </>
   );
 }
