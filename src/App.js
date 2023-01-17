@@ -42,9 +42,9 @@ function App() {
     // </div>
 
     <div>
-      <div className="text-red-700 text-3xl bold underline">Hello World</div>
+      <div className="text-red-700 text-3xl font-bold underline">Hello World</div>
       <div className="h-38 w-24 bg-blue-500">w-24</div>
-      <div className="h-38 w-1/2 bg-yellow-300">w-1/2</div>
+      <div className="h-38 w-1/2 bg-yellow-300 rounded-lg">w-1/2</div>
       <button className="w-24 bg-green-200 hover:bg-green-800">Button 1</button>
       <button className="w-36 bg-red-200 active:bg-red-500 focus:outline-none focus:ring focus:ring-red-800">
         Button 2
