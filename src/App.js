@@ -27,8 +27,14 @@ function App() {
     //     </div>
     //   </div>
     // </div>
-    <div className="App">
+    <div>
       <h1 className="text-3xl font-bold underline">Hello World!</h1>
+      <p className="font-serif">Hello typography!</p>
+      <p className="text-sm">Hello typography!</p>
+      <p className="italic">Hello typography!</p>
+      <p className="italic font-bold">Hello typography!</p>
+      <p className="italic font-bold text-right">Hello typography!</p>
+      <p className="font-semibold text-indigo-500 text-xl">Hello typography!</p>
     </div>
   );
 }
