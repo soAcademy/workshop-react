@@ -71,7 +71,7 @@
 //       <div className="bg-blue-300 h-32">พื้นหลังสีน้ำเงิน สูงจากพื้น 32</div>
 //       <div className="bg-gray-300 h-screen">พื้นหลังสีเทา สูงจากสกรีนเต็ม</div>
 //       <div className="bg-green-300 w-screen">พื้นหลังสีเขียว กว้างเท่าสกรีน</div>
-      
+
 //       <div className="w-64 bg-red-700 m-4">
 //         อิหยังเนี่ย
 //         <div className="w-full bg-yellow-300">คืออะไรวะ?</div>
@@ -91,12 +91,12 @@
 // };
 // export default App;
 
+//WORKSHOP ตอนบ่ายตัวแรก
 // 1.จงสร้าง “Hello world” ที่มีสีแดงความเข้ม 700 ขนาด 3xl ตัวหนา และขีดเส้นใต้
 // const App = () => {
 //   return <p className="text-red-700 text-3xl text-center font-bold underline italic">"Hello Bond"</p>
 // };
 // export default App;
-
 // 2.เจงสร้าง div ต่อไปนี้ มีเรื่อง W-H ด้วย
 // - div ที่ 1 ชื่อ “w-24” มีขนาด 24 สูง 38 พื้นหลังสีฟ้าเข้ม 500
 // - div ที่ 2 ชื่อ “w-1/2” มีขนาด ครึ่งหนึ่งของความกว้างทั้งหมด สูง 38 พื้นหลังสีเหลืองเข้ม 300 และขอบ
@@ -109,7 +109,6 @@
 //   )
 // };
 // export default App;
-
 // 3. จงเขียน button ต่อไปนี้ มีสองข้อย่อย
 // - button ที่ 1 ชื่อ “Button 1” มีขนาด 24 พื้นหลังสีเขียวเข้ม 200 เมื่อมีการ hover ให้เปลี่ยนเป็นเข้ม 800
 // - button ที่ 2 ชื่อ “Button 2” มีขนาด 36 พื้นหลังแดงเข้ม 200 เมื่อมีการ click ให้เปลี่ยนเป็นเข้ม 500 และแสดง focus ขอบเป็นสีแดงเข้ม 800
@@ -125,26 +124,36 @@
 // };
 // export default App;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//WORKSHOP ตอนบ่ายตัวที่สอง
+const App = () => {
+  return (
+    <>
+      <div className="w-1/3 bg-gray-700 m-4 p-4 rounded-md">
+        <div>
+          <img
+            className="w-full rounded-md"
+            src="https://media-cdn.bnn.in.th/140568/iPhone_13_Pro_Max_Sierra_Blue_1-square_medium.jpg"
+          />
+        </div>
+        <div>
+          <h1 className="text-xl text-white mt-4 font-bold">
+            {" "}
+            Iphone 13 Pro Max
+          </h1>
+        </div>
+        <p className="text-gray-300 mt-2"> Buy 2 get 1 FREE</p>
+        <div className="text-right text-amber-500 text-xs">32,000</div>
+        <div>
+          <button className="w-full rounded-md bg-blue-400 hover:bg-blue-400 active:bg-red-200">
+            {" "}
+            BUY NOW
+          </button>
+        </div>
+      </div>
+    </>
+  );
+};
+export default App;
 
 // function App() {
 //ตรงนี้ใไว้เขียน HTML Code ไว้ได้เลย โดยเราจะประกาศตัวแปรก่อน return เช่นพวกชื่อลูกค้าและอื่น ๆ แล้วข้างนอกมันคือส่วนใหญ่จะเป็นชื่อ Component หรือเป็น Function ที่ยาว ๆ มาก ๆ ก็มาตั้งเป็นฟังก์ชัน
