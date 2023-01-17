@@ -35,6 +35,17 @@ function App() {
       <p className="italic font-bold">Hello typography!</p>
       <p className="italic font-bold text-right">Hello typography!</p>
       <p className="font-semibold text-indigo-500 text-xl">Hello typography!</p>
+      <div className="bg-pink-500">Hello spacing!</div>
+      <div className="bg-red-500 px-4">Hello spacing!</div>
+      <div className="bg-orange-500 mx-4">Hello spacing!</div>
+      <div className="bg-amber-500 pt-4">Hello spacing!</div>
+      <div className="bg-yellow-500 mt-4">Hello spacing!</div>
+      <div className="bg-green-500 p-4 m-4">Hello spacing!</div>
+      <div class="flex space-x-4 bg-slate-500 p-4">
+        <div className="bg-blue-500">Hello spacing!</div>
+        <div className="bg-indigo-500">Hello spacing!</div>
+        <div className="bg-violet-500">Hello spacing!</div>
+      </div>
     </div>
   );
 }
