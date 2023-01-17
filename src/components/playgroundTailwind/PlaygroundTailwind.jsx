@@ -55,6 +55,13 @@ font-bold"
       <div className="w-64 bg-gray-300 mt-[20px] border-2 border-indigo-600 rounded-full">
         Hello World
       </div>
+
+      <input class="border-2 border-rose-600 mt-[20px] rounded-[10px]"></input>
+
+      <div class="border-solid border-2 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
+      <div class="border-dashed border-2 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
+      <div class="border-dotted border-2 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
+      <div class="border-double border-4 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
     </>
   );
 }
