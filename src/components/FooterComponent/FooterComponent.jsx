@@ -2,27 +2,13 @@ import React from "react";
 import "./FooterComponent.css";
 
 function FooterComponent() {
+  const whiteTextContact = "text-white text-";
   return (
     <>
-      <div id="footer" className="">
-        <div>
-          <p>Contact Me ...</p>
-        </div>
-        <div>
-          <a href="#">
-            <p id="github">git hub</p>
-          </a>
-          <a href="#">
-            <p id="facebook">facebook</p>
-          </a>
-          <a href="#">
-            <p id="linkedin">linkedin</p>
-          </a>
-          <a href="#">
-            <p id="ig">instagram</p>
-          </a>
-        </div>
-      </div>
+      <div
+        id="ft"
+        className="w-[100%] h-[80px] flex justify-center pt-8 pb-8 mt-6"
+      ></div>
     </>
   );
 }

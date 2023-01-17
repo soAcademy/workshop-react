@@ -1,4 +1,4 @@
-import myPic from "./img/51633.jpg";
+import myPic from "./img/37842.jpg";
 
 export const myImg = {
   url: myPic,

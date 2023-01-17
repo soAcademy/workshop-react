@@ -6,14 +6,15 @@ import reportWebVitals from "./reportWebVitals";
 import "./my-style.css";
 import PlaygroundTailwind from "./components/playgroundTailwind/PlaygroundTailwind";
 import ProductCard from "./components/ProductCard/ProductCard";
+import Resume from "./pages/Resume";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    {/* <App /> */}
-    <PlaygroundTailwind />
-    {/* <ProductCard /> */}
-  </React.StrictMode>
+  <>
+    <Resume />
+    {/* <FooterComponent /> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
