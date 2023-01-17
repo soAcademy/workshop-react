@@ -10,11 +10,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(<App />);
 // root.render("Hello World!");
-  
 // root.render(element);
 reportWebVitals();
-
-
 
 
 
