@@ -62,6 +62,30 @@ font-bold"
       <div class="border-dashed border-2 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
       <div class="border-dotted border-2 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
       <div class="border-double border-4 border-indigo-600 w-[100px] h-[30px] mt-[20px]"></div>
+
+      <button className="bg-sky-600 hover:bg-sky-700 mt-[20px] w-[250px] h-[40px] rounded-[20px] text-white w-[250px]">
+        Save Change
+      </button>
+      <button
+        class="bg-violet-500
+hover:bg-violet-600 active:bg-violet-700
+focus:outline-none focus:ring
+focus:ring-violet-300 w-[250px] h-[40px] rounded-[20px] text-white"
+      >
+        Save changes
+      </button>
+
+      <h1 className="text-3xl font-bold underline text-red-700 mt-[20px]">
+        Hello World!
+      </h1>
+      <div className="w-24 h-38 bg-blue-500">w-24</div>
+      <div className="w-1/2 h-38 bg-yellow-300 rounded-lg">w-1/2</div>
+      <button className="w-24 bg-green-200 hover:bg-green-800 hover:text-white">
+        Button 1
+      </button>
+      <button className="w-36 bg-red-200 active:bg-red-500 focus:ring focus:outline-nonefocus:ring-red-800 ">
+        Button 2
+      </button>
     </>
   );
 }
