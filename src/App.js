@@ -1,7 +1,8 @@
 // const App = () => {
 //   return <h1 className="text-3xl font-bold underline">Hello World</h1>
 // };
-
+// import App from "./App1";
+import Product from "./Product";
 // export default App;
 // //text = xs, sm, base, md, lg, xl, 2xl
 
@@ -71,7 +72,7 @@
 //       <div className="bg-blue-300 h-32">พื้นหลังสีน้ำเงิน สูงจากพื้น 32</div>
 //       <div className="bg-gray-300 h-screen">พื้นหลังสีเทา สูงจากสกรีนเต็ม</div>
 //       <div className="bg-green-300 w-screen">พื้นหลังสีเขียว กว้างเท่าสกรีน</div>
-
+// <div className="w-[400px]">< อันนี้จะเป็นตัวที่บอกว่า เราสามารถปรับ PX ได้เลยตามที่ต้องการ
 //       <div className="w-64 bg-red-700 m-4">
 //         อิหยังเนี่ย
 //         <div className="w-full bg-yellow-300">คืออะไรวะ?</div>
@@ -125,30 +126,49 @@
 // export default App;
 
 //WORKSHOP ตอนบ่ายตัวที่สอง
+// const App = () => {
+//   return (
+//     <>
+//       <div className="w-1/3 bg-gray-700 m-4 p-4 rounded-md">
+//         <div>
+//           <img
+//             className="w-full rounded-md"
+//             src="https://media-cdn.bnn.in.th/140568/iPhone_13_Pro_Max_Sierra_Blue_1-square_medium.jpg"
+//           />
+//         </div>
+//         <div>
+//           <h1 className="text-xl text-white mt-4 font-bold">
+//             {" "}
+//             Iphone 13 Pro Max
+//           </h1>
+//         </div>
+//         <p className="text-gray-300 mt-2"> Buy 2 get 1 FREE</p>
+//         <div className="text-right text-amber-500 text-xs">32,000</div>
+//         <div>
+//           <button className="w-full rounded-md bg-blue-400 hover:bg-blue-400 active:bg-red-200">
+//             {" "}
+//             BUY NOW
+//           </button>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+// export default App;
+
 const App = () => {
   return (
     <>
-      <div className="w-1/3 bg-gray-700 m-4 p-4 rounded-md">
-        <div>
-          <img
-            className="w-full rounded-md"
-            src="https://media-cdn.bnn.in.th/140568/iPhone_13_Pro_Max_Sierra_Blue_1-square_medium.jpg"
-          />
-        </div>
-        <div>
-          <h1 className="text-xl text-white mt-4 font-bold">
-            {" "}
-            Iphone 13 Pro Max
-          </h1>
-        </div>
-        <p className="text-gray-300 mt-2"> Buy 2 get 1 FREE</p>
-        <div className="text-right text-amber-500 text-xs">32,000</div>
-        <div>
-          <button className="w-full rounded-md bg-blue-400 hover:bg-blue-400 active:bg-red-200">
-            {" "}
-            BUY NOW
-          </button>
-        </div>
+      <div className="grid gap-2 grid-cols md:grid-cols-2 lg:grid-cols-3">
+        {/* {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(() => (
+          <Product />
+        ))} */}
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+      <Product />
       </div>
     </>
   );
