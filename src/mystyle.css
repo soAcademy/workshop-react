@@ -1,13 +1,13 @@
 
 
-.blue-with-red {
+.white-with-red {
   color: rgb(238, 238, 246);
   background-color: red;
   font-size: 50px  
 }
 
 @import url('https://fonts.googleapis.com/css?family=Kanit');
-.blue-with-red {
+.blue-with-red2 {
 color: blue;
 background-color: red;
 font-family: 'Kanit';
