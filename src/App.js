@@ -110,8 +110,20 @@
 // };
 // export default App;
 
-
-
+// 3. จงเขียน button ต่อไปนี้ มีสองข้อย่อย
+// - button ที่ 1 ชื่อ “Button 1” มีขนาด 24 พื้นหลังสีเขียวเข้ม 200 เมื่อมีการ hover ให้เปลี่ยนเป็นเข้ม 800
+// - button ที่ 2 ชื่อ “Button 2” มีขนาด 36 พื้นหลังแดงเข้ม 200 เมื่อมีการ click ให้เปลี่ยนเป็นเข้ม 500 และแสดง focus ขอบเป็นสีแดงเข้ม 800
+// const App = () => {
+//   return (
+//   <>
+//   <div>
+//   <button className="center w-36 bg-green-200 hover:bg-green-800 m-4 p-4 rounded">Button 1</button>
+//   </div>
+//   <button className="w-36 bg-red-200 active:bg-red-500 focus:outline-none focus:ring focus:ring-red-800 m-4 p-4 rounded">Button 2</button>
+//   </>
+//   )
+// };
+// export default App;
 
 
 
