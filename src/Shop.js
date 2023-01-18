@@ -34,6 +34,10 @@ const Shop = () => {
 
   return (
     <div className="grid grid-cols-3 space-x-2">
+      {/* <Product data={products[0]} />
+      <Product data={products[1]} />
+      <Product data={products[2]} />
+      <Product data={products[3]} /> */}
       {products.map((data) => (
         <Product data={data} />
       ))}
