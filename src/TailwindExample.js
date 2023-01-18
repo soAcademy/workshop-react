@@ -129,6 +129,8 @@ export const TailwindExample = () => (
       <div className="flex-auto bg-orange-300">Hello</div>
       <div className="w-1/6 bg-gray-300">Hello</div>
     </div>
+    <div className="pb-64"></div>
+
   </>
 );
 

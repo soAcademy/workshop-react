@@ -1,11 +1,12 @@
 import TailwindExample from "./TailwindExample";
 import Resume from "./Resume";
+
 const App = () => {
   return (
     <>
       {/* <TailwindExample /> */}
       <Resume />
-      <div className="pb-64"></div>
+
     </>
   );
 };
