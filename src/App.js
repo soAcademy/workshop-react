@@ -13,6 +13,11 @@ function App() {
   const myCV = {
     firstName: "John",
     lastName: "Johnson",
+    contactInfo: {
+      location: "Bangkok",
+      tel: "+66 0000 0000",
+      email: "john@example.com",
+    },
   };
 
   return (
