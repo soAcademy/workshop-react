@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaPhone, FaRegEnvelope } from "react-icons/fa";
+import Experience from "./Experience";
 
 const Resume = ({
   firstName,
@@ -34,28 +35,8 @@ const Resume = ({
         <p>{aboutInfo}</p>
       </div>
       <div className="md:col-span-2 p-4 md:order-4 lg:col-span-3">
-        <h2 className="text-xl font-display">Work Experience</h2>
-        <ul>
-          {workExpList.map((workExp, index) => (
-            <li key={index}>
-              <dl className="flex flex-col lg:flex-row">
-                <div className="lg:basis-1/4">
-                  <dt className="font-display">{workExp.place}</dt>
-                  <dd>
-                    <div>{workExp.city}</div>
-                    <div>
-                      {workExp.startDate} - {workExp.endDate}
-                    </div>
-                  </dd>
-                </div>
-                <div className="lg:basis-3/4">
-                  <dt className="font-display">{workExp.title}</dt>
-                  <dd>{workExp.desc}</dd>
-                </div>
-              </dl>
-            </li>
-          ))}
-        </ul>
+        <Experience headingText="Work Experience" expList={workExpList} />
+        <Experience headingText="Education" expList={workExpList} />
       </div>
     </div>
   </>
