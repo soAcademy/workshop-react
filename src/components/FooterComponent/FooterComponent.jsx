@@ -7,7 +7,7 @@ function FooterComponent() {
     <>
       <div
         id="ft"
-        className="w-[100%] h-[80px] flex justify-center pt-8 pb-8 mt-6"
+        className="w-[100%] h-[100px] flex justify-center pt-8 pb-8 mt-6"
       ></div>
     </>
   );
