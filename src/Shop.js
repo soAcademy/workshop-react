@@ -1,57 +1,8 @@
-import Products from "./Products";
+import ProductsCard from "./ProductsCard";
+import productsData from './products.json';
 
-const data = [
-  {
-    name: "The New: MacBook Pro 2040",
-    img: "https://images.unsplash.com/photo-1501163268664-3fdf329d019f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$20,000",
-  },
-  {
-    name: "Iphone 20",
-    img: "https://www.thaimobilecenter.com/home/img_stock/2022830_134524.jpg",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$18,000",
-  },
-  {
-    name: "AirPods Pro 20",
-    img: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MME73?wid=890&hei=890&fmt=jpeg&qlt=90&.v=1632861342000",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$13,000",
-  },
-  {
-    name: "The New: Apple Watch 2040",
-    img: "https://media.wired.com/photos/632b6fafd884b4dcc9416568/4:3/w_1799,h_1349,c_limit/Apple-Watch-SE-2022-Gear.jpg",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$15,000",
-  },
-  {
-    name: "Ipad Mini 19",
-    img: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-mini-finish-unselect-gallery-1-202207_FMT_WHH?wid=1280&hei=720&fmt=p-jpg&qlt=95&.v=1654903884450",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$15,000",
-  },
-  {
-    name: "The New: Ipad Pro 2040",
-    img: "https://s.yimg.com/os/creatr-uploaded-images/2022-10/eeed7221-56c8-11ed-a597-98db309f1bfd",
-    description: `
-    Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry. Lorem Ipsum has been the industry's`,
-    price: "$18,000",
-  },
-];
+const Shop = () => {
 
-const Workshop = () => {
   return (
     // <div>
     //   <div className="text-2xl">Hello World</div>
@@ -108,12 +59,12 @@ const Workshop = () => {
     //WORKSHOP 3 // 4
     <div className="w-full flex justify-center py-6">
       <div className="grid gap-6 grid-cols-1 grid-rows-3 md:grid-cols-3">
-        {data.map((r, idx) => (
-          <Products key={idx} data={r} />
+        {productsData.map((r, idx) => (
+          <ProductsCard key={idx} data={r} />
         ))}
       </div>
     </div>
   );
 };
 
-export default Workshop;
+export default Shop;

@@ -84,26 +84,15 @@ const Resume = () => {
               {data.name.job.toUpperCase()}
             </p>
           </div>
-          <div className="md:hidden font-light text-sm mt-10 md:mt-0">
-            <div className="grid grid-cols-12 gap-4 justify-items-stretch">
-              <div className="col-span-3 justify-self-end">
-                <FaHome size={16} />
-              </div>
-              <div className="col-span-9">{data.addr.address}</div>
-            </div>
-            <div className="grid grid-cols-12 gap-4 justify-items-stretch">
-              <div className="col-span-3 justify-self-end">
-                <FaMobileAlt size={16} />
-              </div>
-              <div className="col-span-9">{data.addr.tel}</div>
-            </div>
-            <div className="grid grid-cols-12 gap-4 justify-items-stretch">
-              <div className="col-span-3 justify-self-end">
-                <FaRegEnvelope size={16} />
-              </div>
-              <div className="col-span-9">{data.addr.email}</div>
+
+          <div className="flex justify-center md:hidden font-light text-sm mt-10 md:mt-0">
+            <div>
+              <div className="flex"><FaHome className="text-lg mr-2" />{data.addr.address}</div>
+              <div className="flex"><FaMobileAlt className="text-lg mr-2" />{data.addr.tel}</div>
+              <div className="flex"><FaRegEnvelope className="text-lg mr-2" />{data.addr.email}</div>
             </div>
           </div>
+
           <div className="border-b border-zinc-50 my-10">
             <h2 className="text-2xl text-center md:text-left font-medium">
               ABOUT ME
@@ -138,21 +127,17 @@ const Resume = () => {
                 {data.name.job.toUpperCase()}
               </p>
             </div>
-            <div className="font-light text-sm mt-10 md:mt-0">
-              <p className="flex">
-                <FaHome size={16} />
-                <span className="pl-2">{data.addr.address}</span>
-              </p>
-              <p className="flex">
-                <FaMobileAlt size={16} />
-                <span className="pl-2">{data.addr.tel}</span>
-              </p>
-              <p className="flex">
-                <FaRegEnvelope size={16} />
-                <span className="pl-2">{data.addr.email}</span>
-              </p>
+
+            <div className="flex justify-center hidden md:block font-light text-sm mt-10 md:mt-0">
+              <div>
+                <div className="flex"><FaHome className="text-lg mr-2" />{data.addr.address}</div>
+                <div className="flex"><FaMobileAlt className="text-lg mr-2" />{data.addr.tel}</div>
+                <div className="flex"><FaRegEnvelope className="text-lg mr-2" />{data.addr.email}</div>
+              </div>
             </div>
+
           </div>
+
           <div className="border-b border-neutral-600 py-8">
             <h2 className="text-2xl text-center md:text-left font-medium pb-8">
               WORK EXPERIENCE
@@ -175,6 +160,7 @@ const Resume = () => {
               );
             })}
           </div>
+
           <div className="py-8">
             <h2 className="text-2xl text-center md:text-left font-medium pb-8">
               EDUCATION

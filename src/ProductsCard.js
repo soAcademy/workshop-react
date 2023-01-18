@@ -1,4 +1,4 @@
-const Products = (prop) => {
+const ProductsCard = (prop) => {
   return (
     <div className="w-64 h-fit rounded rounded-md bg-slate-800 shadow-lg shadow-gray-500 p-3">
       <div className="">
@@ -24,4 +24,4 @@ const Products = (prop) => {
   );
 };
 
-export default Products;
+export default ProductsCard;
