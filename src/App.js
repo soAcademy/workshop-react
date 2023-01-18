@@ -9,6 +9,7 @@
 // import TailwindPlayGround from "./TailwindPlayground";
 import Resume from "./Resume";
 import profileImage from "./images/phisite-960x960.jpg";
+import fruitBasket from "./fruitBasket.json";
 
 function App() {
   const myCV = {
@@ -23,6 +24,19 @@ function App() {
     aboutInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
   };
+
+  console.log(`I have ${fruitBasket.apple} apples, ${fruitBasket.banana} bananas, 
+${fruitBasket.orange} oranges`);
+
+  const fruitBasket2 = {
+    apple: { amount: 10, color: "red" },
+    banana: { amount: 5, color: "yellow" },
+    orange: { amount: 2, color: "orange" },
+  };
+
+  console.log(
+    `I have ${fruitBasket2.apple.amount} apples, and the color is ${fruitBasket2.apple.color}`
+  );
 
   return (
     <div>
