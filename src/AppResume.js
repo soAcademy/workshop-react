@@ -1,7 +1,8 @@
 import "./App.css";
 import profile from "./profile.jpg";
+import { FaAngellist } from "react-icons/fa";
 
-function App() {
+function AppResume() {
   return (
     <body>
       <div className="container">
@@ -21,7 +22,7 @@ function App() {
             <h3 className="title">Contact Info</h3>
             <ul>
               <li>
-                <span className="icon"></span>
+                <span className="icon"><FaAngellist/></span>
                 <span className="text">+66 84971 4323 </span>
               </li>
               <li>
@@ -122,4 +123,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppResume;
