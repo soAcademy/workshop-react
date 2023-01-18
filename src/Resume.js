@@ -6,6 +6,7 @@ const Resume = ({
   profileImage,
   contactInfo,
   aboutInfo,
+  workExpList,
 }) => (
   <>
     <div className="grid gap-0 grid-cols-1 md:grid-cols-3">
@@ -33,7 +34,24 @@ const Resume = ({
         <p>{aboutInfo}</p>
       </div>
       <div className="md:col-span-2 p-4 md:order-4">
-        <h2 className="text-xl">Details</h2>
+        <h2 className="text-xl">Work Experience</h2>
+        <ul>
+          {workExpList.map((workExp, index) => (
+            <li key={index}>
+              <dl>
+                <dt>{workExp.place}</dt>
+                <dd>
+                  <div>{workExp.city}</div>
+                  <div>
+                    {workExp.startDate} - {workExp.endDate}
+                  </div>
+                </dd>
+                <dt>{workExp.title}</dt>
+                <dd>{workExp.desc}</dd>
+              </dl>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   </>

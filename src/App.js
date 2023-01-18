@@ -9,7 +9,7 @@
 // import TailwindPlayGround from "./TailwindPlayground";
 import Resume from "./Resume";
 import profileImage from "./images/phisite-960x960.jpg";
-import fruitBasket from "./fruitBasket.json";
+// import fruitBasket from "./fruitBasket.json";
 
 function App() {
   const myCV = {
@@ -23,42 +23,68 @@ function App() {
     },
     aboutInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+    workExpList: [
+      {
+        place: "Company A",
+        city: "Bangkok",
+        startDate: 2014,
+        endDate: 2014,
+        title: "Position A",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+      {
+        place: "Company B",
+        city: "Bangkok",
+        startDate: 2015,
+        endDate: 2018,
+        title: "Position B",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+      {
+        place: "Company C",
+        city: "Bangkok",
+        startDate: 2019,
+        endDate: 2022,
+        title: "Position C",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+    ],
   };
 
-  console.log(`I have ${fruitBasket.apple} apples, ${fruitBasket.banana} bananas, 
-${fruitBasket.orange} oranges`);
+  //   console.log(`I have ${fruitBasket.apple} apples, ${fruitBasket.banana} bananas,
+  // ${fruitBasket.orange} oranges`);
 
-  const fruitBasket2 = {
-    apple: { amount: 10, color: "red" },
-    banana: { amount: 5, color: "yellow" },
-    orange: { amount: 2, color: "orange" },
-  };
+  //   const fruitBasket2 = {
+  //     apple: { amount: 10, color: "red" },
+  //     banana: { amount: 5, color: "yellow" },
+  //     orange: { amount: 2, color: "orange" },
+  //   };
 
-  console.log(
-    `I have ${fruitBasket2.apple.amount} apples, and the color is ${fruitBasket2.apple.color}`
-  );
+  //   console.log(
+  //     `I have ${fruitBasket2.apple.amount} apples, and the color is ${fruitBasket2.apple.color}`
+  //   );
 
-  const string = `string text line 1
-string text line 2`;
-  // quiz 1: replace double quotes with backticks
+  //   const string = `string text line 1
+  // string text line 2`;
+  //   // quiz 1: replace double quotes with backticks
 
-  const a = 10;
-  const b = 20;
-  console.log(`Sum of a + b is: ${a + b}`);
-  // quiz 2: replace with template literal
+  //   const a = 10;
+  //   const b = 20;
+  //   console.log(`Sum of a + b is: ${a + b}`);
+  //   // quiz 2: replace with template literal
 
-  console.log(`Sum of a + b is: ${a + b} and\n Multiple of a * b is: ${a * b}`);
-  // quiz 3: replace with template literal
+  //   console.log(`Sum of a + b is: ${a + b} and\n Multiple of a * b is: ${a * b}`);
+  //   // quiz 3: replace with template literal
 
-  const oddOrEven = (number) => {
-    if (number % 2 === 0) {
-      return "even";
-    } else {
-      return "odd";
-    }
-  };
-  console.log(`1 is an ${oddOrEven(1)} number.`);
-  // quiz 4: replace with template literal
+  //   const oddOrEven = (number) => {
+  //     if (number % 2 === 0) {
+  //       return "even";
+  //     } else {
+  //       return "odd";
+  //     }
+  //   };
+  //   console.log(`1 is an ${oddOrEven(1)} number.`);
+  //   // quiz 4: replace with template literal
 
   return (
     <div>
