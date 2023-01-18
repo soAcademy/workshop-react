@@ -25,7 +25,9 @@ function Resume() {
             </div>
 
             <div>
-              <h4 className="text-xl mt-4">napatpimon.pon@gmail.com</h4>
+              <h4 className="text-xl text-gray-50 mt-4">
+                napatpimon.pon@gmail.com
+              </h4>
               <ul className="flex -translate-x-3">
                 <li className="footer-li">
                   <a
@@ -124,7 +126,7 @@ function Resume() {
               adipisicing elit. Ullam nemo soluta, earum aliquam omnis
               voluptates perferendis libero dolore saepe minus?
             </p>
-            <a href="#">link to project</a>
+            <a href="#">link to project :</a>
           </div>
           <div>
             <h2 className="underline">Project Name</h2>

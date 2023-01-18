@@ -10,7 +10,7 @@ import NavComponent from "./components/NavbarComponent/NavComponent";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 
 function App() {
-  return <div></div>;
+  return <></>;
 }
 
 export default App;

@@ -8,12 +8,14 @@ import PlaygroundTailwind from "./components/playgroundTailwind/PlaygroundTailwi
 import ProductCard from "./components/ProductCard/ProductCard";
 import Resume from "./pages/Resume";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
-
+import Shop from "./Shop";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <Resume />
+    {/* <Resume /> */}
     {/* <FooterComponent /> */}
+    <Shop />
+    {/* <PlaygroundTailwind /> */}
   </>
 );
 
