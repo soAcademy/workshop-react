@@ -5,9 +5,9 @@
 // import myStyleModule from "./my-style.module.css";
 // import Header from "./Header";
 // import { Header2, Header3 } from "./Header2";
-// import ProductPage from "./ProductPage";
+import ProductPage from "./ProductPage";
 // import TailwindPlayGround from "./TailwindPlayground";
-import Resume from "./Resume";
+// import Resume from "./Resume";
 import profileImage from "./images/phisite-960x960.jpg";
 
 function App() {
@@ -24,9 +24,9 @@ function App() {
 
   return (
     <div>
-      {/* <ProductPage /> */}
+      <ProductPage />
       {/* <TailwindPlayGround /> */}
-      <Resume {...myCV} />
+      {/* <Resume {...myCV} /> */}
     </div>
   );
 }
