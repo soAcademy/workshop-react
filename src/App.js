@@ -49,6 +49,32 @@ function App() {
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
       },
     ],
+    eduExpList: [
+      {
+        place: "School A",
+        city: "Bangkok",
+        startDate: 2003,
+        endDate: 2005,
+        title: "Degree A",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+      {
+        place: "University B",
+        city: "Bangkok",
+        startDate: 2006,
+        endDate: 2008,
+        title: "Degree B",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+      {
+        place: "University C",
+        city: "Bangkok",
+        startDate: 2009,
+        endDate: 2010,
+        title: "Degree C",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
+      },
+    ],
   };
 
   //   console.log(`I have ${fruitBasket.apple} apples, ${fruitBasket.banana} bananas,
