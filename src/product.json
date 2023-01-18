@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "image": "https://media.studio7thailand.com/75787/iPhone_14_Pro_Deep_Purple_PDP_Image_Position-1A_Deep_Purple_1-square_medium.jpg",
+      "name": "The New Iphone 14 Pro",
+      "price": "$1099"
+    },
+    {
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-air-select-wifi-purple-202203?wid=940&hei=1112&fmt=png-alpha&.v=1645066730601",
+      "name": "Ipad Air 2022",
+      "price": "$699"
+    },
+    {
+      "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6509/6509650_sd.jpg",
+      "name": "Mac Book Air 2022",
+      "price": "$1599"
+    },
+    {
+      "image": "https://www.apple.com/v/airpods-pro/g/images/meta/og__eui2mpgzwyaa_overview.png",
+      "name": "Airpod Pro 2022",
+      "price": "$299"
+    }
+  ]
+}
