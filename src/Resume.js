@@ -1,6 +1,12 @@
 import { FaMapMarkerAlt, FaPhone, FaRegEnvelope } from "react-icons/fa";
 
-const Resume = ({ firstName, lastName, profileImage, contactInfo }) => (
+const Resume = ({
+  firstName,
+  lastName,
+  profileImage,
+  contactInfo,
+  aboutInfo,
+}) => (
   <>
     <div className="grid gap-0 grid-cols-1 md:grid-cols-3">
       <div className="bg-indigo-500 p-4 md:order-1 text-center flex justify-center">
@@ -24,9 +30,10 @@ const Resume = ({ firstName, lastName, profileImage, contactInfo }) => (
       </div>
       <div className="md:bg-indigo-500 p-4 md:order-3">
         <h2 className="text-xl">About Me</h2>
+        <p>{aboutInfo}</p>
       </div>
       <div className="md:col-span-2 p-4 md:order-4">
-        <h1 className="text-2xl">Details</h1>
+        <h2 className="text-xl">Details</h2>
       </div>
     </div>
   </>
