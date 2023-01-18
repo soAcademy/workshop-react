@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => (
     <h1 className="text-2xl text-white font-bold my-4">{product.name}</h1>
     <p className="my-4">{product.description}</p>
     <div className="text-red-500 text-sm my-4 text-right italic">
-      THB {product.price}
+      THB {product.price.toLocaleString()}
     </div>
     <button className="w-full h-8 bg-blue-900 hover:bg-blue-600 text-white">
       Add to Cart
