@@ -14,7 +14,7 @@ const Resume = ({
         <img src={profileImage} className="w-2/3 rounded-full" alt="Profile" />
       </div>
       <div className="md:col-span-2 p-4 md:order-2">
-        <h1 className="text-2xl">
+        <h1 className="text-2xl font-display">
           {firstName} {lastName}
         </h1>
         <ul>
@@ -30,11 +30,11 @@ const Resume = ({
         </ul>
       </div>
       <div className="md:bg-indigo-500 p-4 md:order-3">
-        <h2 className="text-xl">About Me</h2>
+        <h2 className="text-xl font-display">About Me</h2>
         <p>{aboutInfo}</p>
       </div>
       <div className="md:col-span-2 p-4 md:order-4">
-        <h2 className="text-xl">Work Experience</h2>
+        <h2 className="text-xl font-display">Work Experience</h2>
         <ul>
           {workExpList.map((workExp, index) => (
             <li key={index}>
