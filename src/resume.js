@@ -4,7 +4,7 @@ export const Resume = () => {
   const data = {
     name: "Bond Rungrot",
     profile:
-      "BOnd Rungrot Tatiyawongwiwat Rungrot Tatiyawongwiwat Rungrot TatiyawongwiwatRungrot TatiyawongwiwatRungrot TatiyawongwiwatRungrot Tatiyawongwiwat",
+      "Bond Rungrot Tatiyawongwiwat Rungrot Tatiyawongwiwat Rungrot TatiyawongwiwatRungrot TatiyawongwiwatRungrot TatiyawongwiwatRungrot Tatiyawongwiwat",
   };
 
   return (
