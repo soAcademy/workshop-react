@@ -1,9 +1,9 @@
 import Product from "./Product";
+import { FaAngellist, FaAffiliatetheme } from "react-icons/fa";
 
 const App = () => {
   return (
     <>
-     
       <p className="text-base">Hello World!</p>
       <p className="text-lg">Hello World</p>
       <p className="text-xl">Hello World</p>
@@ -144,7 +144,14 @@ const App = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row h-64">
-        <div className="bg-green-200 h-64 sm:w-1/3">Left</div>
+        <div className="bg-green-200 h-64 sm:w-1/3">
+          <div className="float-left">Left</div>{" "}
+          <div className="-mt-3 text-red-700 text-4xl float-left">
+            <FaAngellist />
+          </div>
+          <div className="-mt-3 text-purple-400 text-4xl ml-4"><FaAffiliatetheme /></div>
+
+        </div>
         <div className="bg-red-200 h-64 sm:w-2/3">Right</div>
       </div>
       <div className="pb-64"></div>
@@ -154,3 +161,4 @@ const App = () => {
 // t (top), b (bottom), l (left), r (right), y (top and bottom), x (left and right)
 export default App;
 // xs, sm, base, md, lg, xl, 2xl
+// yarn add react-icons
