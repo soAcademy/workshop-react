@@ -1,16 +1,17 @@
 import "./App.css";
-import {
-  myInformation,
-  experience,
-  education,
-  contact,
-  myImg,
-} from "./myInformation";
+import ResumeBoeing from "./pages/ResumeBoeing";
 import NavComponent from "./components/NavbarComponent/NavComponent";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
+import ProductCard from "./components/ProductCard/ProductCard";
+import Shop from "./Shop";
 
 function App() {
-  return <></>;
+  return (
+    <div>
+      {/* <ResumeBoeing /> */}
+      <Shop />
+    </div>
+  );
 }
 
 export default App;

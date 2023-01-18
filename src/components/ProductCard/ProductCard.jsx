@@ -1,6 +1,6 @@
 import React from "react";
-
-const ProductCard = ({ data }) => {
+const ProductCard = (props) => {
+  const { data } = props;
   console.log(data);
   return (
     <div className="bg-gray-300 w-[300px] h-[400px] rounded-[20px] mt-[30px]">

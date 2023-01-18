@@ -1,5 +1,4 @@
 import React from "react";
-import { myImg } from "../../myInformation";
 import ProductCard from "../ProductCard/ProductCard";
 
 function PlaygroundTailwind() {
@@ -91,7 +90,7 @@ focus:ring-violet-300 w-[250px] h-[40px] rounded-[20px] text-white"
 
       <div className="bg-gray-300 w-[300px] h-[400px] rounded-[20px] mt-[30px]">
         <div className="w-full ml-[50px] pt-[30px] ">
-          <img className="w-[200px] h-[200px]" src={myImg.url}></img>
+          <img className="w-[200px] h-[200px]"></img>
         </div>
         <div className="ml-[200px] pt-[40px] pb-[20px] space-x-6 ">
           <span className="pr-[40px] text-[20px]"> rabbitz </span>

@@ -34,10 +34,9 @@ const Shop = () => {
   console.log("products");
   return (
     <div className="grid grid-cols-3 space-x-2">
-      {products.map((data) => {
-        console.log(data);
-        return <ProductCard data={data} />;
-      })}
+      {products.map((data) => (
+        <ProductCard data={data} />
+      ))}
     </div>
   );
 };

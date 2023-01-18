@@ -9,13 +9,11 @@ import ProductCard from "./components/ProductCard/ProductCard";
 import Resume from "./pages/Resume";
 import FooterComponent from "./components/FooterComponent/FooterComponent";
 import Shop from "./Shop";
+import ResumeBoeing from "./pages/ResumeBoeing";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <Resume /> */}
-    {/* <FooterComponent /> */}
-    <Shop />
-    {/* <PlaygroundTailwind /> */}
+    <App />
   </>
 );
 
