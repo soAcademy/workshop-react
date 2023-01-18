@@ -40,9 +40,43 @@ const Shop = () => {
       <Product data={products[3]} /> */}
       {products.map((data) => (
         <Product data={data} />
+        // Product(data)
       ))}
     </div>
   );
 };
+
+// object = {}
+// array = []
+// arrayOfObject = [{}, {}, {}]
+
+// object = {
+//   name: 'Bin',
+//   location: 'Bangkok',
+// }
+
+// array = ['Bin', 'Ploy', 'Jam']
+
+// arrayOfObject = [
+//   {
+//     name: 'Bin',
+//     location: 'Bangkok',
+//   },
+//   {
+//     name: 'Jam',
+//     location: 'Nonthaburi',
+//   },
+//   {
+//     name: 'Ploy',
+//     location: 'Sukhothai'
+//   }
+// ]
+
+// objectOfArray = {key1: [], key2: [], key3: []}
+// objectOfArray = {
+//   name: ['Bin', 'Ploy', 'Jam'],
+//   location: ['Bangkok', 'Nonthaburi', 'Sukhothai'],
+//   count: 3
+// }
 
 export default Shop;
