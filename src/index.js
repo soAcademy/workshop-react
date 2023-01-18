@@ -3,21 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import Resume from './Resume.js';
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root')
 );
 root.render(<App />);
+// root.render(<Resume />);
 // root.render("Hello World!");
 // root.render(element);
 reportWebVitals();
-
-
-
-
-
-
 
 
 
