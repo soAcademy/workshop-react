@@ -1,4 +1,4 @@
-import Product from "./Product";
+import ProductComponent from "./Product";
 
 const Shop = () => {
   const products = [
@@ -34,18 +34,21 @@ const Shop = () => {
 
   return (
     <div className="grid grid-cols-3 space-x-2">
-      {/* <Product data={products[0]} />
-      <Product data={products[1]} />
-      <Product data={products[2]} />
-      <Product data={products[3]} /> */}
+      {/* <ProductComponent data={products[0]} />
+      <ProductComponent data={products[1]} />
+      <ProductComponent data={products[2]} />
+      <ProductComponent data={products[3]} /> */}
+      <ProductComponent data={products[1]} />
       {products.map((data) => (
-        <Product data={data} />
+        <ProductComponent data={data} />
         // Product(data)
       ))}
+
     </div>
   );
 };
 
+// addNumber(3, 5);
 // object = {}
 // array = []
 // arrayOfObject = [{}, {}, {}]
