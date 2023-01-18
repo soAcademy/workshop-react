@@ -3,6 +3,7 @@ import Product from "./Product";
 const App = () => {
   return (
     <>
+     
       <p className="text-base">Hello World!</p>
       <p className="text-lg">Hello World</p>
       <p className="text-xl">Hello World</p>
@@ -131,6 +132,21 @@ const App = () => {
         <div className="w-1/6 bg-gray-300">Hello</div>
       </div>
 
+      <div className="flex bg-gray-100 h-[300px]">
+        <div className="w-1/3 bg-amber-200 shadow-lg">Left</div>
+        <div className="w-2/3 bg-blue-100">
+          <div className="flex">
+            <div className="w-1/3 bg-green-100 shadow-lg">A</div>
+            <div className="w-2/3 bg-red-100 shadow">B</div>
+          </div>
+          <hr className="my-2" />
+        </div>
+      </div>
+
+      <div className="flex flex-col sm:flex-row h-64">
+        <div className="bg-green-200 h-64 sm:w-1/3">Left</div>
+        <div className="bg-red-200 h-64 sm:w-2/3">Right</div>
+      </div>
       <div className="pb-64"></div>
     </>
   );
