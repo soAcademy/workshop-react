@@ -2,7 +2,7 @@ import Product from "./Product";
 import { FaAngellist, FaAffiliatetheme } from "react-icons/fa";
 
 
-const App = () => {
+export const TailwindExample= () => {
   return (
     <>
       <h1 className="text-ls">ตัวหนังสือ ธรรมดา</h1>
@@ -163,4 +163,4 @@ const App = () => {
 // xs, sm, base, md, lg, xl, 2xl
 // yarn add react-icons
 // export default App;
-export default App;
+export default TailwindExample;
