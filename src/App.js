@@ -20,6 +20,8 @@ function App() {
       tel: "+66 0000 0000",
       email: "john@example.com",
     },
+    aboutInfo:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
   };
 
   return (
