@@ -40,7 +40,7 @@ const Shop = () => {
       <ProductComponent data={products[3]} /> */}
       <ProductComponent data={products[1]} />
       {products.map((data) => (
-        <ProductComponent data={data} />
+        <ProductComponent data={data} var1={"hello world"} />
         // Product(data)
       ))}
 
