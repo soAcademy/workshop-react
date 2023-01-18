@@ -1,10 +1,10 @@
 import { FaMapMarkerAlt, FaPhone, FaRegEnvelope } from "react-icons/fa";
 
-const Resume = ({ firstName, lastName, contactInfo }) => (
+const Resume = ({ firstName, lastName, profileImage, contactInfo }) => (
   <>
     <div className="grid gap-0 grid-cols-1 md:grid-cols-3">
-      <div className="bg-indigo-500 p-4 md:order-1">
-        <h2 className="text-xl">Profile Image</h2>
+      <div className="bg-indigo-500 p-4 md:order-1 text-center flex justify-center">
+        <img src={profileImage} className="w-2/3 rounded-full" alt="Profile" />
       </div>
       <div className="md:col-span-2 p-4 md:order-2">
         <h1 className="text-2xl">

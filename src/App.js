@@ -8,11 +8,13 @@
 // import ProductPage from "./ProductPage";
 // import TailwindPlayGround from "./TailwindPlayground";
 import Resume from "./Resume";
+import profileImage from "./images/phisite-960x960.jpg";
 
 function App() {
   const myCV = {
     firstName: "John",
     lastName: "Johnson",
+    profileImage: profileImage,
     contactInfo: {
       location: "Bangkok",
       tel: "+66 0000 0000",
