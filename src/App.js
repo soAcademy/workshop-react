@@ -38,6 +38,28 @@ ${fruitBasket.orange} oranges`);
     `I have ${fruitBasket2.apple.amount} apples, and the color is ${fruitBasket2.apple.color}`
   );
 
+  const string = `string text line 1
+string text line 2`;
+  // quiz 1: replace double quotes with backticks
+
+  const a = 10;
+  const b = 20;
+  console.log(`Sum of a + b is: ${a + b}`);
+  // quiz 2: replace with template literal
+
+  console.log(`Sum of a + b is: ${a + b} and\n Multiple of a * b is: ${a * b}`);
+  // quiz 3: replace with template literal
+
+  const oddOrEven = (number) => {
+    if (number % 2 === 0) {
+      return "even";
+    } else {
+      return "odd";
+    }
+  };
+  console.log(`1 is an ${oddOrEven(1)} number.`);
+  // quiz 4: replace with template literal
+
   return (
     <div>
       {/* <ProductPage /> */}
