@@ -27,7 +27,7 @@ function App() {
       {
         place: "Company A",
         city: "Bangkok",
-        startDate: 2014,
+        startDate: 2011,
         endDate: 2014,
         title: "Position A",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu felis eget nibh lobortis congue et sed neque. Nullam hendrerit magna sed arcu aliquet, in cursus sapien bibendum.",
