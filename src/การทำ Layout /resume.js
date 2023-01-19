@@ -5,7 +5,7 @@ const hello = "Hello world!";
 
 function App() {
   return (
-  <div class="container">container
+  <div className="container">container
     <div className='header'>header</div>
     <div className='frame'>frame
         <div className="left">

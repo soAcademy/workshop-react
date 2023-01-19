@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sprinttech-bond"
+  },
+  "targets": {
+    "sprinttech-bond": {
+      "hosting": {
+        "sprinttech-bond-resume": [
+          "sprinttech-bond-resume"
+        ]
+      }
+    }
+  }
+}

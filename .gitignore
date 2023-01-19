@@ -12,12 +12,15 @@
 /build
 
 # misc
-.DS_Store
+.DS_Store //อันนี้ต้องมีถ้าใช้Mac
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.idea //เอาอันนี้เข้าไปด้วย
+.vscode //อันนี้ต้องมี
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+yarn-debug.log* //อันนี้ต้องมี
+yarn-error.log* //อันนี้ต้องมี
+/firebase
