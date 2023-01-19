@@ -21,6 +21,10 @@ const App = () => {
     },
   ];
 
+  const str = `line 1
+line2`
+  console.log(str);
+
   return (
     <>
       {/* <TailwindExample /> */}

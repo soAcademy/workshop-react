@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "example-project"
+  },
+  "targets": {
+    "example-project": {
+      "hosting": {
+        "example-host": [
+          "example-host"
+        ]
+      }
+    }
+  }
+}
