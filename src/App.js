@@ -8,8 +8,8 @@ import Shop from "./Shop";
 function App() {
   return (
     <div>
-      {/* <ResumeBoeing /> */}
-      <Shop />
+      <ResumeBoeing />
+      {/* <Shop /> */}
     </div>
   );
 }

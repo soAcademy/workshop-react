@@ -28,14 +28,17 @@ export const experience = [
     jobDescription: "Full-Stack Software Developer",
   },
   {
+    job: "Gopher Developer Boot Camp",
+    place: "KBTG",
+    jobDescription: [],
+  },
+  {
     job: "Junior Software Developer Bootcamp",
     place: "Generation Thailand",
     jobDescription: [
-      "Learned how to build web applications from React as front end, Node.js as back end, and MongoDB as a Database",
-
-      "Learned essential skills for switching careers, such as growth mindset, communication, agile, and teamwork",
-
-      "Final Project: MERN Stack CRUD Project The web application consists of a front end using React with React router and Axios as the main dependency. In the back end, it uses Express to manage RESTful API. Finally, using Mongoose to connect to MongoDB.",
+      // "Learned how to build web applications from React as front end, Node.js as back end, and MongoDB as a Database",
+      // "Learned essential skills for switching careers, such as growth mindset, communication, agile, and teamwork",
+      // "Final Project: MERN Stack CRUD Project The web application consists of a front end using React with React router and Axios as the main dependency. In the back end, it uses Express to manage RESTful API. Finally, using Mongoose to connect to MongoDB.",
     ],
   },
   {

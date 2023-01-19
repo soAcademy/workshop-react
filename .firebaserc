@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sprinttech-boeing"
+  },
+  "targets": {
+    "sprinttech-boeing": {
+      "hosting": {
+        "sprinttech-boeing-resume": [
+          "sprinttech-boeing-resume"
+        ]
+      }
+    }
+  }
+}

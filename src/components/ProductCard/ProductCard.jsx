@@ -7,7 +7,7 @@ const ProductCard = (props) => {
       <div className="w-full ml-[50px] pt-[30px] ">
         <img className="w-[200px] h-[200px]" src={data.image}></img>
       </div>
-      <div className="ml-[200px] pt-[40px] pb-[20px] space-x-6 ">
+      <div className="ml-[200px] pt-[40px] pb-[20px] space-x-6">
         <span className="pr-[40px] text-[20px]"> {data.name} </span>
         <span className="text-red-500">{data.price}</span>
       </div>
