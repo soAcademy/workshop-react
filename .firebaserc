@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sprinttech-earth"
+  },
+  "targets": {
+    "sprinttech-earth": {
+      "hosting": {
+        "sprinttech-earth-resume": [
+          "sprinttech-earth-resume"
+        ]
+      }
+    }
+  }
+}

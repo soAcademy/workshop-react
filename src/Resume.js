@@ -69,9 +69,29 @@ const Resume = () => {
             ></img>
           </button>
           <div className="pr-4 flex justify-between items-center text-lg">
-            <button className="rounded-md px-2 mx-1 invisible md:visible">HOME</button>
-            <button className="rounded-md px-2 mx-1 invisible md:visible">GITHUB</button>
-            <button className="rounded-md px-2 mx-1 invisible md:visible">LINKED-IN</button>
+            <button className="rounded-md invisible md:visible hover:text-xl w-20">
+              HOME
+            </button>
+            <a
+              href="https://github.com/jaiieth"
+              target="_blank"
+              alt=""
+              rel="noreferrer"
+            >
+              <button className="rounded-md invisible md:visible hover:text-xl w-24 ">
+                GITHUB
+              </button>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/varis-anekboontaweechoke-664600218/"
+              target="_blank"
+              alt=""
+              rel="noreferrer"
+            >
+              <button className="rounded-md invisible md:visible hover:text-xl w-28">
+                LINKED-IN
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -93,19 +113,21 @@ const Resume = () => {
             </div>
             <hr className="py-2" />
             <div className="h-fit py-5 w-2/5 flex justify-center w-2/5 md:w-full ">
-              <div className="flex flex-col pl-1 md:pl-0 border-l border-gray-500 md:border-0 absolute top-[58px] right-10 md:relative md:right-0 md:top-0">
-                <p className="text-sm md:text-xl font-semibold">
+              <div className="flex flex-col pl-1 md:pl-0 border-l border-gray-500 md:border-0 absolute top-[58px] right-8 md:relative md:right-0 md:top-0">
+                <p className="text-sm md:text-xl font-semibold relative left-2 md:left-0">
                   WEBSITE & SOCIAL LINKS
                 </p>
                 {socials.map((e) => (
                   <a href={e.url} target="_blank">
-                    <div className="flex mt-1 md:mt-4 items-center">
-                      <img
-                        src={e.icon}
-                        className="w-[25px] h-[25px] m-1 md:mr-4"
-                        alt=""
-                      ></img>
-                      <div className="text-xs md:text-sm">
+                    <div className="flex mt-1 max-[390px]:mt-0 md:mt-4 items-center">
+                      <div className="w-[30px] h-[30px] m-3 flex items-center">
+                        <img
+                          src={e.icon}
+                          className="w-[25px] h-[25px] m-1 md:mr-4 hover:w-[30px] hover:h-[30px] relative bottom-[1px] hover:right-[3px]"
+                          alt=""
+                        ></img>
+                      </div>
+                      <div className="max-[390px]:text-[10px] text-xs md:text-sm">
                         <pre>
                           {e.platform}
                           <p>{e.url}</p>
@@ -149,7 +171,7 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          <hr className="mt-2 text-gray-900"/>
+          <hr className="mt-2 text-gray-900" />
           <div className="h-5/12 md:px-2">
             <p className="my-4 pb-2 font-bold md:text-xl">WORK EXPERIENCE</p>
             {workExperience.map((e) => (
@@ -174,13 +196,13 @@ const Resume = () => {
             ))}
           </div>
           <div className="h-5/12 md:px-0">
-            <p className="my-2 py-2 font-bold md:text-xl border-t">EDUCATION</p>
+            <p className="px-1 my-2 py-2 font-bold md:text-xl border-t">EDUCATION</p>
             {education.map((e) => (
               <div className="py-2 flex">
                 <div className="w-1/3 py-4">
                   <div className=" relative -top-[24px] text-sm md:text-base">
-                    <p className="font-semibold">{e.school}</p>
-                    <p className="relative top-2">{e.year}</p>
+                    <p className="font-semibold px-1">{e.school}</p>
+                    <p className="relative top-2 px-1">{e.year}</p>
                   </div>
                 </div>
                 <div className="w-2/3 pl-4 border-l">
