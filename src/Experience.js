@@ -1,7 +1,7 @@
 const Experience = ({ headingText, expList }) => (
   <>
     {" "}
-    <h2 className="text-xl font-display">{headingText}</h2>
+    <h2 className="font-display text-xl">{headingText}</h2>
     <ul>
       {expList
         .slice(0)

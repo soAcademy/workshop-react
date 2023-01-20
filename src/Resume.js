@@ -11,12 +11,12 @@ const Resume = ({
   eduExpList,
 }) => (
   <>
-    <div className="grid gap-0 grid-cols-1 md:grid-cols-3 lg:grid-cols-4">
-      <div className="bg-indigo-500 p-4 md:order-1 text-center flex justify-center">
+    <div className="grid grid-cols-1 gap-0 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex justify-center bg-indigo-500 p-4 text-center md:order-1">
         <img src={profileImage} className="w-2/3 rounded-full" alt="Profile" />
       </div>
-      <div className="md:col-span-2 p-4 md:order-2 lg:col-span-3">
-        <h1 className="text-2xl font-display">
+      <div className="p-4 md:order-2 md:col-span-2 lg:col-span-3">
+        <h1 className="font-display text-2xl">
           {firstName} {lastName}
         </h1>
         <ul>
@@ -31,11 +31,11 @@ const Resume = ({
           </li>
         </ul>
       </div>
-      <div className="md:bg-indigo-500 p-4 md:order-3">
-        <h2 className="text-xl font-display">About Me</h2>
+      <div className="p-4 md:order-3 md:bg-indigo-500">
+        <h2 className="font-display text-xl">About Me</h2>
         <p>{aboutInfo}</p>
       </div>
-      <div className="md:col-span-2 p-4 md:order-4 lg:col-span-3">
+      <div className="p-4 md:order-4 md:col-span-2 lg:col-span-3">
         <Experience headingText="Work Experience" expList={workExpList} />
         <Experience headingText="Education" expList={eduExpList} />
       </div>
