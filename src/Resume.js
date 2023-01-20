@@ -3,6 +3,12 @@ import { GoLocation } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
 const Resume = () => {
   const info = {
+    summary: "Personal Summary",
+    summaryinfo: " A well-rounded and highly motivated Aeronautics & Astronautics graduate with strong technical and interpersonal skills. These are demonstrated through the independent research and computational simulations performed for the Individual Project, as well as the role of a structural engineer in a fixed- wing UAV design project.",
+    website: "Website & Social Links",
+    facebook: "Facebook: Teak Yuktanand",
+    instagram: "Instagram: teak_anawil",
+    line: "Line: teak88",
     name: (
       <>
         Anawil
@@ -29,10 +35,10 @@ const Resume = () => {
     schoolinfo2:
       " Help planning lessons, organising academic activities and accompanying a group of students on a school trip",
     education: "Education",
-    uni: "University of Southampton",
+    uni: "University",
     unidate: "October 2019 - June 2022",
     unicourse: "BEng Aeronautics & Astronautics",
-    highschool: "Harrow Bangkok",
+    highschool: "school",
     highschooldate: "August 2012 - June 2018",
     unidetail:
       " Modules involved: Individual Project, Materials and Structures, Aerothermodynamics, Applications of CFD, Propulsion, Aerodynamics, Aircraft Structural Design, Aerospace Control Systems, Introduction to Aircraft Design, Experimental Methods for Aerodynamics, Mathematics for Engineering and the Environment, Systems Design and Computing, Engineering Management & Law",
@@ -44,37 +50,43 @@ const Resume = () => {
 
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-3/4 m-5 h-[750px]">
+      <div className="flex flex-col sm:flex-row m-5">
         <div className="sm:w-1/3 bg-sky-900 rounded-lg shadow-lg">
           <div>
             <img
-              src="./profilepicture.jpg"
+              src="/profilepicture.jpg"
               className="rounded-full mt-6 h-22 mx-auto w-1/2"
             ></img>
           </div>
           <div className="text-slate-50 text-2xl align-left ml-2 font-bold">
-            Personal summary
+            {info.summary}
           </div>
           <div className="text-sm text-slate-50 ml-4 mr-4 mt-4 mb-4">
-            A well-rounded and highly motivated Aeronautics & Astronautics
-            graduate with strong technical and interpersonal skills. These are
-            demonstrated through the independent research and computational
-            simulations performed for the Individual Project, as well as the
-            role of a structural engineer in a fixed- wing UAV design project.
+            {info.summaryinfo}
+          </div>
+          <div className="ml-2 text-slate-50 text-2xl font-bold">
+            Language Skills
+          </div>
+          <div className="text-lg font-bold text-slate-50 ml-4 mt-2">
+            English
+          </div>
+          <div className="bg-slate-500 h-4 w-4/5 mx-auto mt-2 rounded-lg">
+            <div className="bg-green-400 h-full rounded-lg " style={{width:"90%"}}>
+            </div>
           </div>
           <div className="text-2xl text-slate-50 ml-2 mt-4 mr-2 font-bold">
-            Website & Social Links
+            {info.website}
           </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4">Facebook: </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4">Instagram: </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4">Line: </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4">{info.facebook} </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4">{info.instagram} </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4 mb-3">{info.line} </div>
         </div>
         <div className="sm:w-2/3 bg-slate-200 mr-10 rounded-lg shadow-lg">
-          <div className="flex">
+          <div className="md:flex">
             <div className=" w-4/5 text-5xl text-sky-800 mt-6 ml-3 font-extrabold">
               {info.name}
             </div>
-            <div className="bg-blue-200 rounded-lg mt-4 mr-4">
+            <div className="bg-blue-200 rounded-lg mt-4 mr-4 ml-2">
               <div className="text-xs text-sky-700 font-semibold mt-6 ml-5">
                 {info.location}
               </div>
@@ -111,7 +123,7 @@ const Resume = () => {
                 {info.ivhq}
               </div>
               <div className="text-xs text-sky-500 ml-5">June-July 2019</div>
-              <div className="text-base text-sky-600 ml-5 mt-8 font-bold">
+              <div className="text-base text-sky-600 ml-5 mt-12 sm:mt-8 font-bold">
                 {info.school}
               </div>
               <div className="text-xs text-sky-500 ml-5">February 2019</div>
@@ -129,10 +141,10 @@ const Resume = () => {
                   <li>{info.ivhqinfo2}</li>
                 </ul>
               </div>
-              <div className="text-xs text-sky-500 mt-4 mr-2">
+              <div className="text-xs text-sky-500 mt-4 mr-3">
                 <ul>
-                  <li className="font-bold">{info.schoolinfo}</li>
-                  <li>{info.schoolinfo2}</li>
+                  <li className="font-bold mr-3">{info.schoolinfo}</li>
+                  <li className="mr-3">{info.schoolinfo2}</li>
                 </ul>
               </div>
             </div>
@@ -145,12 +157,12 @@ const Resume = () => {
           </div>
           <div className="flex">
             <div className="w-1/3">
-              <div className="text-base text-sky-600 ml-5 mt-3 font-bold">
+              <div className="text-base text-sky-600 ml-5 mr-2 mt-3 font-bold">
                 {info.uni}
               </div>
               <div className="text-xs text-sky-500 ml-5">{info.unidate}</div>
               <div className="text-xs text-sky-500 ml-5">{info.unicourse}</div>
-              <div className="text-base text-sky-600 ml-5 mt-6 font-bold">
+              <div className="text-base text-sky-600 ml-5 mt-12 font-bold">
                 {info.highschool}
               </div>
               <div className="text-xs text-sky-500 ml-5">
@@ -165,7 +177,7 @@ const Resume = () => {
                 <ul>
                   <li>{info.highschooldetail}</li>
                   <li>{info.highschooldetail2}</li>
-                  <li>{info.highschooldetail3}</li>
+                  <li className="mb-3">{info.highschooldetail3}</li>
                 </ul>
               </div>
             </div>
