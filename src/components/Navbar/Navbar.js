@@ -41,7 +41,7 @@ const Navbar = () => {
     //   </div>
     // </div>
     <div className="h-10 text-white w-full">
-      <div className="flex items-center justify-between border-b border-gray-400 pl-3 bg-black h-10 w-full fixed z-50">
+      <div className="flex items-center justify-between border-b border-gray-400 pl-3 bg-black h-10 w-full fixed z-50 shadow-[0_20px_20px_-10px_rgba(0,0,0,0.3)]">
         <nav>
           <section className="MOBILE-MENU flex md:hidden">
             <div
