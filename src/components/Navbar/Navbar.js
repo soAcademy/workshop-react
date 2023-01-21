@@ -1,5 +1,5 @@
 import { useState } from "react"; // import state
-import './Navbar.css'
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
@@ -88,7 +88,13 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li className="border-b border-gray-400 my-4 uppercase">
-                  <a href="#https://github.com/jaiieth">github</a>
+                  <a
+                    href="https://github.com/jaiieth"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    github
+                  </a>
                 </li>
               </ul>
             </div>
@@ -99,13 +105,19 @@ const Navbar = () => {
               <a
                 href="https://www.linkedin.com/in/varis-anekboontaweechoke-664600218/"
                 target="_blank"
-                rel='noreferrer'
+                rel="noreferrer"
               >
                 LINKED-IN
               </a>
             </li>
             <li>
-              <a href="#https://github.com/jaiieth">GITHUB</a>
+              <a
+                href="https://github.com/jaiieth"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GITHUB
+              </a>
             </li>
           </ul>
         </nav>
