@@ -1,10 +1,14 @@
 import { BiPhone } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
+import { GiViolin } from "react-icons/gi";
+import { MdCardTravel } from "react-icons/md";
+import { FaBookReader } from "react-icons/fa";
 const Resume = () => {
   const info = {
     summary: "Personal Summary",
-    summaryinfo: " A well-rounded and highly motivated Aeronautics & Astronautics graduate with strong technical and interpersonal skills. These are demonstrated through the independent research and computational simulations performed for the Individual Project, as well as the role of a structural engineer in a fixed- wing UAV design project.",
+    summaryinfo:
+      " A well-rounded and highly motivated Aeronautics & Astronautics graduate with strong technical and interpersonal skills. These are demonstrated through the independent research and computational simulations performed for the Individual Project, as well as the role of a structural engineer in a fixed- wing UAV design project.",
     website: "Website & Social Links",
     facebook: "Facebook: Teak Yuktanand",
     instagram: "Instagram: teak_anawil",
@@ -71,15 +75,32 @@ const Resume = () => {
             English
           </div>
           <div className="bg-slate-500 h-4 w-4/5 mx-auto mt-2 rounded-lg">
-            <div className="bg-green-400 h-full rounded-lg " style={{width:"90%"}}>
-            </div>
+            <div
+              className="bg-green-400 h-full rounded-lg "
+              style={{ width: "90%" }}
+            ></div>
+          </div>
+          <div className="text-lg font-bold text-slate-50 ml-4 mt-2">
+            Thai
+          </div>
+          <div className="bg-slate-500 h-4 w-4/5 mx-auto mt-2 rounded-lg">
+            <div
+              className="bg-green-400 h-full rounded-lg "
+              style={{ width: "90%" }}
+            ></div>
           </div>
           <div className="text-2xl text-slate-50 ml-2 mt-4 mr-2 font-bold">
             {info.website}
           </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4">{info.facebook} </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4">{info.instagram} </div>
-          <div className="text-sm text-slate-50 ml-4 mt-4 mb-3">{info.line} </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4">
+            {info.facebook}{" "}
+          </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4">
+            {info.instagram}{" "}
+          </div>
+          <div className="text-sm text-slate-50 ml-4 mt-4 mb-3">
+            {info.line}{" "}
+          </div>
         </div>
         <div className="sm:w-2/3 bg-slate-200 mr-10 rounded-lg shadow-lg">
           <div className="md:flex">
@@ -180,6 +201,40 @@ const Resume = () => {
                   <li className="mb-3">{info.highschooldetail3}</li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <div className="divide-y-4 divide-teal-600 divide-dashed mr-4 ">
+            <div className="text-slate-200">..</div>
+            <div className=" text-2xl text-sky-800 ml-3 mt-2 mb-3 font-bold">
+              Hobbies
+            </div>
+          </div>
+          <div className="flex">
+            
+              <div className="bg-blue-200 rounded-lg mx-auto mb-4">
+                <div className="mx-6 text-2xl text-teal-700 mt-2">
+                  <GiViolin />
+                </div>
+                <div className="font-bold text-base text-sky-700 mx-3 mb-2">
+                  Music
+                </div>
+              </div>
+              <div className="bg-blue-200 rounded-lg mx-auto mb-4">
+                <div className="mx-8 text-2xl text-teal-700 mt-2">
+                  <MdCardTravel />
+                </div>
+                <div className="font-bold text-base text-sky-700 mx-3 mb-2">
+                  Traveling
+                </div>
+              </div>
+              <div className="bg-blue-200 rounded-lg mx-auto mb-4">
+                <div className="mx-8 text-2xl text-teal-700 mt-2">
+                  <FaBookReader />
+                </div>
+                <div className="font-bold text-base text-sky-700 mx-3 mb-2">
+                  Reading
+                </div>
+              
             </div>
           </div>
         </div>
