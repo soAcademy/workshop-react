@@ -1,31 +1,25 @@
 const Experience = ({ headingText, expList }) => (
   <>
     {" "}
-    <h2 className="font-display text-xl">{headingText}</h2>
-    <ul>
-      {expList
-        .slice(0)
-        .reverse()
-        .map((exp, index) => (
-          <li key={index}>
-            <dl className="flex flex-col lg:flex-row">
-              <div className="lg:basis-1/4">
-                <dt className="font-display">{exp.place}</dt>
-                <dd>
-                  <div>{exp.city}</div>
-                  <div>
-                    {exp.startDate} - {exp.endDate}
-                  </div>
-                </dd>
-              </div>
-              <div className="lg:basis-3/4">
-                <dt className="font-display">{exp.title}</dt>
-                <dd>{exp.desc}</dd>
-              </div>
-            </dl>
-          </li>
-        ))}
-    </ul>
+    <h2 class="mb-4 text-sm2 font-bold tracking-widest text-gray-550 print:font-normal">
+      {headingText}
+    </h2>
+    {expList
+      .slice(0)
+      .reverse()
+      .map((exp, index) => (
+        <section class="mb-4.5 break-inside-avoid" key={index}>
+          <header>
+            <h3 class="text-lg font-semibold leading-snugish text-gray-700">
+              {exp.place}
+            </h3>
+            <p class="text-md leading-normal text-gray-650">
+              {exp.startDate} – {exp.endDate} | {exp.title}
+            </p>
+          </header>
+          <p class="mt-2.1 text-md leading-normal text-gray-700">{exp.desc}</p>
+        </section>
+      ))}
   </>
 );
 

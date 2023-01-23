@@ -113,11 +113,11 @@ function App() {
   //   // quiz 4: replace with template literal
 
   return (
-    <div>
+    <>
       {/* <ProductPage /> */}
       {/* <TailwindPlayGround /> */}
       <Resume {...myCV} />
-    </div>
+    </>
   );
 }
 
