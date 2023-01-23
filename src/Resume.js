@@ -1,4 +1,5 @@
 import { FaMapMarkerAlt, FaPhone, FaRegEnvelope } from "react-icons/fa";
+import NavBar from "./NavBar";
 import Experience from "./Experience";
 
 const Resume = ({
@@ -11,6 +12,7 @@ const Resume = ({
   eduExpList,
 }) => (
   <main className="font-jost hyphens-manual">
+    <NavBar />
     <div className="grid grid-cols-1 gap-0 md:grid-cols-3 lg:grid-cols-4">
       <div className="flex justify-center bg-indigo-500 p-4 text-center md:order-1">
         <img src={profileImage} className="w-2/3 rounded-full" alt="Profile" />
