@@ -1,9 +1,4 @@
-const Product = () => {
-  const detail = {
-    pName: `New! Cute Teddy Doll`,
-    pDescription: `Teddy Bear White color.....`,
-    pPrice: `399.00`,
-  };
+const Product = ({data}) => {
   return (
     <>
       {/* <h1 className="text-3xl font-bold underline text-red-700">Hello World</h1>
@@ -26,12 +21,12 @@ focus:ring focus:ring-red-800 rounded-xl"
 
       <div className="pb-64"></div> */}
       <div className="p-5 m-2 max-w-sm rounded-xl border bg-gray-700 shadow-xl">
-        <img className="w-full rounded-xl" src="gorilla.jpg" />
+        <img className="w-full rounded-xl" src={data.image} />
         <div className="mt-5">
-          <h5 className="font-bold text-2xl text-white">{detail.pName}</h5>
-          <p className="pt-2 text-md text-gray-400">{detail.pDescription}</p>
+          <h5 className="font-bold text-2xl text-white">{data.name}</h5>
+          <p className="pt-2 text-md text-gray-400">{data.description}</p>
           <p className="pt-2 pb-2 italic text-sm text-right text-yellow-400">
-            ฿{detail.pPrice}
+            ฿{data.price}
           </p>
           <div className="flex">
             <button

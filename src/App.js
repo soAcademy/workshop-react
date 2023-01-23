@@ -1,42 +1,45 @@
-import "./App.css";
-import "./App-3.css";
-import Product from "./Product";
+import "./index.css";
+import Resume from "./Resume";
+import Shop from "./Shop.js";
 
 const App = () => {
+  const info = {
+    image: `./cake.jpg`,
+    aboutMe: `An ExtraOrdinary Ducky is what i describe myself, past few years i studied a lot of new things.
+    Perferendis, qui impedit. Ut tempora incidunt eaque itaque pariatur,
+    illum, laudantium corporis ipsam magnam, soluta ipsa deleniti porro
+    ullam. Repudiandae fugiat dolor suscipit fuga laboriosam ipsa? Saepe
+    unde suscipit voluptas quis itaque, Yes! I am a duck :P`,
+    site1: "https://github.com/cerkcake",
+    site2: "https://www.facebook.com/yoonuch",
+    site3: "http://www.facebook.com",
+    fname: `KUNLANIS`,
+    lname: `YOONUCH`,
+    location: `Saimai, Bangkok`,
+    contactInfo: `091-234-5678`,
+    qualify: `Assc. Engineer No.69903`,
+    school: `RITTIYA WANNALAI, Bangkok`,
+    schoolDetail: <ul class="list-none">
+    <li>
+      - Science-Mathematics
+    </li>
+  </ul>,
+    university1: `KING MONGKUT'S UNIVERSITY OF TECHNOLOGY THONBURI, Bangkok`,
+    universityDetail1: <ul class="list-none">
+    <li>
+      - Bachelor of Civil Engineering
+    </li>
+  </ul>,
+      university2: `KONKUK UNIVERSITY, Seoul`,
+      universityDetail2: <ul>
+      <li>
+      - Summer Course of Korean Language & Project Management
+      </li>
+    </ul>,
+  };
   return (
-    <>
-      {/* <h1 className="text-3xl font-bold underline text-red-700">Hello World</h1>
-      <div className="flex my-4">
-        <div className="w-24 h-38 bg-sky-500 text-center">w-24</div>
-        <div className="w-1/2 h-38 bg-amber-500 rounded-lg text-center">
-          w-1/2
-        </div>
-      </div>
-
-      <button className="w-24 bg-green-200 hover:bg-green-800 active: rounded-xl">
-        Button 1
-      </button>
-      <button
-        className="w-36 bg-red-200 hover:bg-red-300 active:bg-red-500 focus:outline-none
-focus:ring focus:ring-red-800 rounded-xl"
-      >
-        Button 2
-      </button>
-
-      <div className="pb-64"></div> */}
-
-      <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-        {[0, 1, 2].map(() => (
-          <Product />
-        ))}
-        </div>
-        <p>- - - sept fn here - - -</p>
-        <div className="grid gap-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
-        {[...Array(9).keys()].map(() => (
-          <Product />
-        ))}
-      </div>
-    </>
+    <Resume props={info}/>
+    // <Shop/>
   );
 };
 
