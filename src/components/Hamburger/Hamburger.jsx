@@ -12,9 +12,9 @@ function Hamburger() {
         </h1>
       </a>
       <a href="https://boeingportfirst.vercel.app/">
-        <h1 className="text-white p-2 bg-gradient-to-r from-cyan-500 to-blue-500  rounded-[10px] mt-[30px] md:text-3xl">
+        <button className="text-white p-2 bg-gradient-to-r from-cyan-500 to-blue-500  rounded-[10px] mt-[30px] md:text-3xl">
           My Portfolio
-        </h1>
+        </button>
       </a>
     </div>
   );
