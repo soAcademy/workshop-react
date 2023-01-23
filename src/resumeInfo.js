@@ -1,18 +1,18 @@
 import myPicture from "./img/37842.jpg";
-import iconcontact from "./img/icons8-contacts-32.png";
-import iconhome from "./img/icons8-home-page-50.png";
+import iconhamburger from "./img/icons8-menu-squared-50.png";
+import iconlogo from "./img/icons8-moon-and-stars-40.png";
 import iconschool from "./img/icons8-school-50.png";
 
 export const profileImg = {
   url: myPicture,
-  icon1: iconcontact,
-  icon2: iconhome,
+  icon1: iconhamburger,
+  icon2: iconlogo,
   icon3: iconschool,
 };
 
 export const myInformation = {
-  name: "Napatpimon Pon.",
-  position: "Junior Software Developer",
+  name: "Napatpimon P.",
+  position: "Fullstack Software Developer",
   address: "Phayathai, Bangkok 10400",
   email: "Napatpimon.pon@gmail.com",
   tel: "(+66)99-017-1309",
