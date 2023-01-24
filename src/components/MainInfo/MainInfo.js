@@ -1,5 +1,5 @@
 import Header from './Header/Header.js'
-import WorkExperience from './WorkExperience.js/WorkExperience.js';
+import WorkExperience from './WorkExperience/WorkExperience.js';
 import Education from './Education/Education.js';
 
 const MainInfo = () => (

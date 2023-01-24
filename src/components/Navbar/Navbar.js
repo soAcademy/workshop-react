@@ -14,13 +14,13 @@ const Navbar = () => {
 
   return (
     <div className="h-10 text-white w-full">
-      <div className="flex items-center justify-between border-b border-gray-400 pl-3 bg-black h-10 w-full fixed z-50 shadow-[0_20px_20px_-10px_rgba(0,0,0,0.3)]">
+      <div className="flex items-center justify-between border-b border-gray-400 pl-3 bg-black h-10 w-full fixed z-50">
         <nav>
           <section className="MOBILE-MENU flex md:hidden">
             <div
-              className={`HAMBURGER-ICON space-y-2 cursor-pointer z-20 p-[6px] hover:bg-gray-800 ${
-                isNavOpen ? `bg-gray-800` : "bg-black"
-              } rounded-md duration-700`}
+              className={`HAMBURGER-ICON space-y-2 cursor-pointer z-20 p-[6px] hover:bg-gray-700  ${
+                isNavOpen ? `bg-gray-800 shadow-[inset_0_0_5px_rgba(0,0,0,1)]` : "bg-gray-800"
+              } rounded-md duration-300`}
               onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
             >
               <span className="block h-0.5 w-8 bg-white"></span>

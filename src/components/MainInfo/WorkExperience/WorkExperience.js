@@ -12,7 +12,7 @@ const WorkExperience = () => (
           </div>
         </div>
         <div className="w-2/3 pl-4 border-l">
-          <ol className="pl-4 relative -top-[9px] -left-[17px] text-sm md:text-base">
+          <ol className="pl-4 relative -top-[9px] -left-[18px] text-sm md:text-base">
             <li className="font-semibold list-disc ">{e.role}</li>
             <li className="relative top-2 ">{e.jobDesc}</li>
           </ol>
