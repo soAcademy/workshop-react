@@ -1,51 +1,26 @@
-import { useState } from "react"; // import state
-import "./Navbar.css";
+import { useEffect, useState } from "react"; // import state
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+  const [navClass, setNavClass] = useState();
+
+  useEffect(() => {
+    setNavClass(
+      `absolute w-1/2 h-min top-10 left-3 bg-black text-white transition-opacity duration-500 border-2 border-double rounded-lg shadow-xl shadow-gray-900 ${
+        isNavOpen ? "opacity-90 z-30" : "opacity-0 pointer-events-none"
+      }`
+    );
+  }, [isNavOpen]);
+
   return (
-    // <div className="h-10 md:h-12 text-white w-full">
-    //   <div className="flex h-10 md:h-12 w-full justify-between fixed z-50 bg-black shadow-lg">
-    //     <button className="h-10 md:h-full ml-2 fixed md:relative z-50">
-    //       <img
-    //         src="https://www.pngkey.com/png/full/332-3321462_mobile-menu-for-barefoot-resort-vacations-hamburger-menu.png"
-    //         className="h-10 md:h-full p-2 md:p-3"
-    //         alt=""
-    //       ></img>
-    //     </button>
-    //     <div className="pr-4 flex justify-between items-center text-lg">
-    //       <button className="rounded-md invisible md:visible hover:text-xl w-20">
-    //         HOME
-    //       </button>
-    //       <a
-    //         href="https://github.com/jaiieth"
-    //         target="_blank"
-    //         alt=""
-    //         rel="noreferrer"
-    //       >
-    //         <button className="rounded-md invisible md:visible hover:text-xl w-24 ">
-    //           GITHUB
-    //         </button>
-    //       </a>
-    //       <a
-    //         href="https://www.linkedin.com/in/varis-anekboontaweechoke-664600218/"
-    //         target="_blank"
-    //         alt=""
-    //         rel="noreferrer"
-    //       >
-    //         <button className="rounded-md invisible md:visible hover:text-xl w-28">
-    //           LINKED-IN
-    //         </button>
-    //       </a>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="h-10 text-white w-full">
       <div className="flex items-center justify-between border-b border-gray-400 pl-3 bg-black h-10 w-full fixed z-50 shadow-[0_20px_20px_-10px_rgba(0,0,0,0.3)]">
         <nav>
           <section className="MOBILE-MENU flex md:hidden">
             <div
-              className="HAMBURGER-ICON space-y-2 cursor-pointer"
+              className={`HAMBURGER-ICON space-y-2 cursor-pointer z-20 p-[6px] hover:bg-gray-800 ${
+                isNavOpen ? `bg-gray-800` : "bg-black"
+              } rounded-md duration-700`}
               onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
             >
               <span className="block h-0.5 w-8 bg-white"></span>
@@ -53,9 +28,9 @@ const Navbar = () => {
               <span className="block h-0.5 w-8 bg-white"></span>
             </div>
 
-            <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
+            <div className={navClass} id="hamburg">
               <div
-                className="CROSS-ICON absolute top-0 right-0 cursor-pointer rounded-xl my-2 mx-2 "
+                className="CROSS-ICON absolute top-0 right-2 cursor-pointer rounded-xl my-2 mx-2 "
                 onClick={() => setIsNavOpen(false)} // change isNavOpen state to false to close the menu
               >
                 <svg
