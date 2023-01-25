@@ -7,7 +7,7 @@
 // import { Header2, Header3 } from "./Header2";
 // import ProductPage from "./ProductPage";
 // import TailwindPlayGround from "./TailwindPlayground";
-import Resume from "./Resume";
+import Resume from "./Components/Resume";
 import profileImage from "./images/phisite-960x960.jpg";
 // import fruitBasket from "./fruitBasket.json";
 
