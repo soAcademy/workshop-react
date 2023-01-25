@@ -13,10 +13,11 @@ auctor dolor. Vivamus sed nulla arcu. Etiam dictum.`
 
 const Resume = () => {
 
+//h-[1300px] w-[1200px]
 return(
   <>
-  <div className="flex h-[1300px] w-[1200px] ml-52">
-    <div className="w-[400px] bg-cyan-900">
+  <div className="flex flex-col sm:flex-row ml-52"> 
+    <div className="w-full sm:w-1/3 bg-cyan-900">
       <div className="border-8 border-white mt-20 ml-10">
       <img src={image} alt="me"/>
       </div>
@@ -35,7 +36,7 @@ return(
       <hr className=' ml-10 mt-3' />
       <p className='mt-2 ml-8 text-xl text-white'>{qualification}</p>
     </div>
-    <div className="w-[800px] bg-cyan-50">
+    <div className="w-full sm:w-2/3 bg-cyan-50">
       <h6 className='text-2xl bg-cyan-900 text-white mx-8 mt-20 pl-3 py-1'>WORK EXPERIENCE</h6>
       <p className='mt-5 ml-8 text-xl text-cyan-900 font-bold'>2002 - 2022</p>
       <p className='mt-2 ml-8 text-xl text-black font-bold'>PROJECT MANAGER</p>

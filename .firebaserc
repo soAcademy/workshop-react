@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "sprinttech-na"
+  },
+  "targets": {
+    "sprinttech-na": {
+      "hosting": {
+        "sprinttech-na-resume": [
+          "sprinttech-na-resume"
+        ]
+      }
+    }
+  }
+}
