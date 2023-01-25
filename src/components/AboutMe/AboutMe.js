@@ -6,7 +6,7 @@ const AboutMe = () => (
       <img
         src="./profile.jpg"
         alt="profile.jpg"
-        className="object-cover relative left-5 top-1 md:left-0 top-0 md:h-full w-1/3 md:w-full lg:w-2/3 rounded-full "
+        className="object-cover relative left-5 top-1 md:left-0 top-0 md:h-full w-1/3 md:w-full lg:w-2/3 rounded-full"
       ></img>
     </div>
     <div className="flex flex-row md:flex-col h-full md:h-2/5">
