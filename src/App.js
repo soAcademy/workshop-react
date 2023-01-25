@@ -5,6 +5,13 @@ import Shop from "./Shop.js";
 import string from "./Tiworkshop.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Aboutme from "./Aboutme.js";
+import Work from "./Work.js";
+import Education from "./Education.js";
+import Hobbies from "./Hobbies.js";
+import Contact from "./Contact.js";
+import { GiHamburgerMenu } from "react-icons/gi";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const resumeInfo = {
   summary: "Personal Summary",
@@ -60,13 +67,119 @@ const resumeInfo = {
   reading: "Reading",
 };
 function App() {
+  const [toggle, setToggle] = useState(false);
   return (
     <>
       <BrowserRouter>
+        <div className="w-full fixed ml-1 top-0">
+          <nav className="bg-teal-300 shadow-lg md:flex md:items-center md:justify-between p-2 rounded-lg mr-3 md:mr-6">
+            <div>
+              <button
+                className="text-xl cursor-pointer justify-right md:hidden"
+                onClick={() => setToggle(!toggle)}
+              >
+                <GiHamburgerMenu />
+              </button>
+              {toggle && (
+                <div>
+                  <div>
+                    <Link
+                      to="resume/main"
+                      className="text-base font-bold text-sky-700 hover:bg-sky-100"
+                    >
+                      About Me
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to="resume/work"
+                      className="text-base font-bold text-sky-700 hover:bg-sky-100"
+                    >
+                      Work Experience
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to="resume/education"
+                      className="text-base font-bold text-sky-700 hover:bg-sky-100"
+                    >
+                      Education
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to="resume/hobbies"
+                      className="text-base font-bold text-sky-700 hover:bg-sky-100"
+                    >
+                      Hobbies
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      to="resume/contact"
+                      className="text-base font-bold text-sky-700 hover:bg-sky-100"
+                    >
+                      Contact
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+            <div>
+              <ul className=" md:flex md:items-center">
+                <li>
+                  <Link
+                    to="resume/main"
+                    className="text-base font-bold text-sky-700 hover:text-sky-100 md:mx-6 hidden md:block"
+                  >
+                    About Me
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    to="resume/work"
+                    className="text-base text-sky-700 hover:text-sky-100 md:mx-6 font-bold hidden md:block "
+                  >
+                    Work Experience
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="resume/education"
+                    className="text-base text-sky-700 hover:text-sky-100 md:mx-6 font-bold hidden md:block "
+                  >
+                    Education
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="resume/hobbies"
+                    className="text-base text-sky-700 hover:text-sky-100 md:mx-6 font-bold md:show hidden md:block"
+                  >
+                    Hobbies
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="resume/contact"
+                    className="text-base text-sky-700 hover:text-sky-100 md:mx-6 font-bold hidden md:block"
+                  >
+                    Contacts
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <Routes>
           <Route exact path="" element={<Resume info={resumeInfo} />} />
           <Route exact path="resume">
-            <Route exact path="aboutme" element={<Aboutme />} />
+            <Route exact path="main" element={<Resume info={resumeInfo} />} />
+            <Route exact path="work" element={<Work />} />
+            <Route exact path="education" element={<Education />} />
+            <Route exact path="hobbies" element={<Hobbies />} />
+            <Route exact path="contact" element={<Contact />} />
           </Route>
           <Route exact path="*" element={<>404 Not Found</>} />
         </Routes>
