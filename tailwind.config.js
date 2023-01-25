@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'robCond': ["Roboto Condensed", 'sans-serif']
+      'robCond': ["Roboto Condensed", 'sans-serif'],
+      'montAlt': ["Montserrat Alternates", 'sans-serif']
     },
   },
   plugins: [],
