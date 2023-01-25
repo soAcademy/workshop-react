@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import { BiPhone } from "react-icons/bi";
 import { GoLocation } from "react-icons/go";
 import { HiOutlineMail } from "react-icons/hi";
@@ -7,7 +7,8 @@ import { GiViolin, GiHamburgerMenu } from "react-icons/gi";
 import { MdCardTravel } from "react-icons/md";
 import { FaBookReader } from "react-icons/fa";
 
-const Resume = ({info}) => {
+const Resume = ({ info }) => {
+  console.log("Resume props", info);
   // const info = {
   //   summary: "Personal Summary",
   //   summaryinfo:
@@ -102,12 +103,12 @@ const Resume = ({info}) => {
           <div>
             <ul className=" md:flex md:items-center">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="resume/aboutme"
                   className="text-base font-bold text-sky-700 hover:text-sky-100 md:mx-6 hidden md:block"
                 >
                   About Me
-                </a>
+                </Link>
               </li>
 
               <li>
@@ -164,7 +165,7 @@ const Resume = ({info}) => {
             {info.language}
           </div>
           <div className="text-lg font-bold text-slate-50 ml-4 mt-2">
-          {info.eng}
+            {info.eng}
           </div>
           <div className="bg-slate-500 h-4 w-4/5 mx-auto mt-2 rounded-lg">
             <div
@@ -172,7 +173,9 @@ const Resume = ({info}) => {
               style={{ width: "90%" }}
             ></div>
           </div>
-          <div className="text-lg font-bold text-slate-50 ml-4 mt-2">{info.thai}</div>
+          <div className="text-lg font-bold text-slate-50 ml-4 mt-2">
+            {info.thai}
+          </div>
           <div className="bg-slate-500 h-4 w-4/5 mx-auto mt-2 rounded-lg">
             <div
               className="bg-green-400 h-full rounded-lg "
@@ -296,7 +299,7 @@ const Resume = ({info}) => {
           <div className="divide-y-4 divide-teal-600 divide-dashed mr-4 ">
             <div className="text-slate-200">..</div>
             <div className=" text-2xl text-sky-800 ml-3 mt-2 mb-3 font-bold">
-            {info.hobbies}
+              {info.hobbies}
             </div>
           </div>
           <div className="flex">
@@ -305,7 +308,7 @@ const Resume = ({info}) => {
                 <GiViolin />
               </div>
               <div className="font-bold text-base text-sky-700 mx-3 mb-2">
-              {info.music}
+                {info.music}
               </div>
             </div>
             <div className="bg-blue-200 rounded-lg mx-auto mb-4">
@@ -313,7 +316,7 @@ const Resume = ({info}) => {
                 <MdCardTravel />
               </div>
               <div className="font-bold text-base text-sky-700 mx-3 mb-2">
-              {info.traveling}
+                {info.traveling}
               </div>
             </div>
             <div className="bg-blue-200 rounded-lg mx-auto mb-4">
@@ -321,7 +324,7 @@ const Resume = ({info}) => {
                 <FaBookReader />
               </div>
               <div className="font-bold text-base text-sky-700 mx-3 mb-2">
-              {info.reading}
+                {info.reading}
               </div>
             </div>
           </div>
