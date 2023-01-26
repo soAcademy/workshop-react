@@ -33,7 +33,7 @@ const Banner = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             eu mauris commodo, rutrum dui ut, tempor massa. Curabitur at ornare
             metus. In a turpis scelerisque, rhoncus odio at, vestibulum diam.
-            Aliquam non auctor dolor. Vivamus sed nulla arcu. Etiam dictum.
+            Aliquam non auctor dolor. Vivamus sed nulla arcu. Etiam dictum Na.
           </p>
         </div>
       </div>
